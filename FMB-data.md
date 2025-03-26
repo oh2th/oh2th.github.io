@@ -44,6 +44,7 @@ As collected and combined from VW ID.3 (2023) and Fiat Ducato.
 | 389  | Vehicle Odometer Value                     | km              |       |
 | 410  | OEM Battery Charge State                   | 0/1             | 0 = Not Charging, 1 = Charging |
 | 411  | OEM Battery Charge Level                   | %               |       |
+| 412	 | Unknown                                    | °C              |       |
 | 449  | Ignition On Counter                        | count           |       |
 | 543  | Hybrid System Voltage                      | V               |       |
 | 544  | Hybrid System Current                      | A               |       |
@@ -90,7 +91,7 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | 389  | Vehicle Odometer Value (km)                      | 23689        |
 | 410  | OEM Battery Charge State (0 = Not Charging, 1 = Charging) | 1            |
 | 411  | OEM Battery Charge Level (%)                     | 87           |
-| 412  | Unknown                                          | 16, 17       |
+| 412  | Unknown            | 16, 17       |
 | 449  | Ignition On Counter                             | 4844         |
 | 543  | Hybrid System Voltage (V)                        | 1023         |
 | 544  | Hybrid System Current (A)                        | -858, -1021, -1008, -942, -342, -30, -84, -78, -49 |
