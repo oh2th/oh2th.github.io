@@ -1,6 +1,43 @@
-# FMB003 data as seen from ID.3
+# FMB003 data
 
-## FMB supported parameters
+## FMB supported parameters so far
+
+As collected from VW ID.3 (2023) and Fiat Ducato.
+
+| ID   | Parameter                                   | Unit                      | Notes |
+|------|---------------------------------------------|---------------------------|-------|
+| 16   | Total Odometer by FMB GPS                   | m                         |       |
+| 21   | GSM Signal                                  | 0-5                       | 0 = <-111 or unknown, 5 = >= -73 |
+| 30   | Number of DTC - Detected Error Codes        | count                     |       |
+| 31   | Engine Load                                 | %                         |       |
+| 32   | Coolant Temperature                         | °C                        |       |
+| 36   | Engine RPM                                  | RPM                       |       |
+| 37   | Vehicle Speed                               | km/h                      |       |
+| 51   | Control Module Voltage                      | mV                        |       |
+| 57   | Hybrid Battery Pack Remaining Life          | %                         |       |
+| 66   | External Voltage as Measured by FMB         | mV                        |       |
+| 67   | FMB Internal Battery Voltage                | mV                        |       |
+| 68   | FMB Internal Battery Current                | mA                        |       |
+| 69   | GNSS Status                                 | 0-3                       | 0 = OFF, 1 = ON with fix, 2 = ON without fix, 3 = Sleep |
+| 113  | Battery Level                               | %                         | Not confirmed which battery |
+| 181  | GNSS PDOP                                   | -                         | Divide by 10 to get decimal value |
+| 182  | GNSS HDOP                                   | -                         | Divide by 10 to get decimal value |
+| 199  | Trip Odometer                               | m                         |       |
+| 200  | Sleep Mode                                  | -                         | 0: No Sleep, 1: GPS Sleep, 2: Deep Sleep, 3: Online Sleep, 4: Ultra Sleep |
+| 239  | Ignition                                    | 0/1                       | 0 = Off, 1 = On |
+| 240  | Movement                                    | 0/1                       | 0 = Off, 1 = On |
+| 241  | Active GSM Operator                         | MNC + MNI                 | Example: 24491 = Telia FI |
+| 256  | VIN (Vehicle Identification Number)         |                           | WVWZZZE1ZPP000660 |
+| 387  | GPS Location                                | -                         | Format: `+Lat+Lng+Speed/` |
+| 389  | Vehicle Odometer Value                      | km                        |       |
+| 410  | OEM Battery Charge State                    | 0/1                       | 0 = Not Charging, 1 = Charging |
+| 411  | OEM Battery Charge Level                    | %                         |       |
+| 443  | Unknown                                     | -                         |       |
+| 449  | Ignition On Counter                         | count                     |       |
+| 543  | Hybrid System Voltage                       | V                         |       |
+| 544  | Hybrid System Current                       | A                         |       |
+| 755  | Range Remaining                             | km                        |       |
+| 1152 | OEM Battery Temperature                     | °C                        |       |
 
 https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 
@@ -31,13 +68,13 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | 389  | Vehicle Odometer Value (km)                      | 23689        |
 | 410  | OEM Battery Charge State (0 = Not Charging, 1 = Charging) | 1            |
 | 411  | OEM Battery Charge Level (%)                     | 87           |
-| 412  | ?                                                | 16, 17       |
+| 412  | Unknown                                          | 16, 17       |
 | 543  | Hybrid System Voltage (V)                        | 1023         |
 | 544  | Hybrid System Current (A)                        | -858, -1021, -1008, -942, -342, -30, -84, -78, -49 |
 | 755  | Range Remaining (km)                             | 243          |
 | 1152 | OEM Battery Temperature (°C)                     | 22           |
 | ts   | Timestamp                                        | 1742907783000, ... |
-| pr   | ?                                                | 0            |
+| pr   | Unknown                                          | 0            |
 | latlng | Latitude, Longitude                            | 60.202057, 24.596032, ... |
 | alt  | Altitude (m)                                     | 21, 22, 22, 22, 22, 20, 22, 23, 27 |
 | ang  | Angle (°)                                        | 96, 109, 130, 149, 155, 155, 162, 173, 184 |
@@ -45,14 +82,45 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | sp   | Speed (km/h)                                     | 28, 27, 27, 28, 40, 50, 50, 49, 49 |
 | evt  | Event                                            | 0            |
 
-GNSS reference
+## Sample data collected from Fiat Ducato
+
+| Key  | Description                                      | Sample Value |
+|------|--------------------------------------------------|--------------|
+| 16   | Total Odometer by FMB GPS                        | 9870         |
+| 21   | GSM Signal (0-5)                                 | 3            |
+| 66   | External Voltage as measured by FMB              | 13076        |
+| 67   | FMB Internal Battery (mV)                        | 3990         |
+| 68   | FMB Internal Battery (mA)                        | 0            |
+| 69   | GNSS Status (1 = GNSS ON with fix)               | 1            |
+| 113  | Battery Level % (Unknown which battery)          | 100          |
+| 181  | GNSS PDOP                                        | 25          |
+| 182  | GNSS HDOP                                        | 10          |
+| 199  | Trip Odometer by FMB GPS                         | 273          |
+| 200  | Unknown                                          | 0            |
+| 239  | Ignition (0 = Off)                               | 0            |
+| 240  | Movement (1 = On)                                | 1            |
+| 241  | Active GSM Operator (MNC 244, MNI 91 = Telia FI) | 24491        |
+| 387  | GNSS Position (Latitude + Longitude + Speed)     | `+601970.3000+0245902.4000+000.022/` |
+| 449  | Ignition On Counter                              | 615          |
+| ts   | Timestamp (ms)                                   | 1742967958000 |
+| pr   | Unknown                                          | 0            |
+| latlng | Latitude & Longitude (Parsed)                  | 60.197030, 24.590240 |
+| alt  | Altitude (m)                                     | 22           |
+| ang  | Angle (Course)                                   | 351          |
+| sat  | Satellite Count                                  | 12           |
+| sp   | Speed (km/h)                                     | 0            |
+| evt  | Unknown (Possibly Event Type)                    | 240          |
+
+
+## GNSS reference
 
 - 0 - GNSS OFF
 - 1 – GNSS ON with fix
 - 2 - GNSS ON without fix
 - 3 - GNSS sleep
 
-RSSI refernce
+## RSSI refernce
+
 - 0	=< -111 or not known/not detectable
 - 1	< -101
 - 2	< -93
