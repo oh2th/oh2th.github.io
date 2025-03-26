@@ -2,7 +2,7 @@
 
 ## FMB supported parameters so far
 
-As collected from VW ID.3 (2023) and Fiat Ducato.
+As collected an combined from VW ID.3 (2023) and Fiat Ducato.
 
 | ID   | Parameter                                   | Unit                      | Notes |
 |------|---------------------------------------------|---------------------------|-------|
@@ -27,12 +27,11 @@ As collected from VW ID.3 (2023) and Fiat Ducato.
 | 239  | Ignition                                    | 0/1                       | 0 = Off, 1 = On |
 | 240  | Movement                                    | 0/1                       | 0 = Off, 1 = On |
 | 241  | Active GSM Operator                         | MNC + MNI                 | Example: 24491 = Telia FI |
-| 256  | VIN (Vehicle Identification Number)         |                           | WVWZZZE1ZPP000660 |
+| 256  | VIN (Vehicle Identification Number)         |                           | WVWZZZ... |
 | 387  | GPS Location                                | -                         | Format: `+Lat+Lng+Speed/` |
 | 389  | Vehicle Odometer Value                      | km                        |       |
 | 410  | OEM Battery Charge State                    | 0/1                       | 0 = Not Charging, 1 = Charging |
 | 411  | OEM Battery Charge Level                    | %                         |       |
-| 443  | Unknown                                     | -                         |       |
 | 449  | Ignition On Counter                         | count                     |       |
 | 543  | Hybrid System Voltage                       | V                         |       |
 | 544  | Hybrid System Current                       | A                         |       |
@@ -64,7 +63,7 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | 239  | Ignition (0 = Off, 1 = On)                       | 1            |
 | 240  | Movement (0 = Off, 1 = On)                       | 1            |
 | 241  | Active GSM Operator MNC, MNI                     | 24491        |
-| 256  | VIN (Vehicle Identification Number)              | WVWZZZE1ZPP000660 |
+| 256  | VIN (Vehicle Identification Number)              | WVWZZZ.... |
 | 389  | Vehicle Odometer Value (km)                      | 23689        |
 | 410  | OEM Battery Charge State (0 = Not Charging, 1 = Charging) | 1            |
 | 411  | OEM Battery Charge Level (%)                     | 87           |
@@ -93,14 +92,15 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | 68   | FMB Internal Battery (mA)                        | 0            |
 | 69   | GNSS Status (1 = GNSS ON with fix)               | 1            |
 | 113  | Battery Level % (Unknown which battery)          | 100          |
-| 181  | GNSS PDOP                                        | 25          |
-| 182  | GNSS HDOP                                        | 10          |
+| 181  | GNSS PDOP                                        | 25           |
+| 182  | GNSS HDOP                                        | 10           |
 | 199  | Trip Odometer by FMB GPS                         | 273          |
 | 200  | Unknown                                          | 0            |
 | 239  | Ignition (0 = Off)                               | 0            |
 | 240  | Movement (1 = On)                                | 1            |
 | 241  | Active GSM Operator (MNC 244, MNI 91 = Telia FI) | 24491        |
 | 387  | GNSS Position (Latitude + Longitude + Speed)     | `+601970.3000+0245902.4000+000.022/` |
+| 443  | Unknown                                          |              |
 | 449  | Ignition On Counter                              | 615          |
 | ts   | Timestamp (ms)                                   | 1742967958000 |
 | pr   | Unknown                                          | 0            |
