@@ -13,7 +13,7 @@ As collected and combined from VW ID.3 (2023) and Fiat Ducato.
 | 17   | X-axis Acceleration                        | mG              |       |
 | 18   | Y-axis Acceleration                        | mG              |       |
 | 19   | Z-axis Acceleration                        | mG              |       |
-| 21   | GSM Signal Strength                        | 0-5             | 0 = <-111 or unknown, 5 = >= -73 |
+| 21   | GSM Signal Strength                        | 0-5             | 0	=< -111 or not known/not detectable, 1	< -101, 2	< -93, 3	< -83, 4	< -73, 5	>= -73 |
 | 24   | GNSS Speed                                 | km/h            |       |
 | 30   | Number of DTC - Detected Error Codes       | count           |       |
 | 31   | Engine Load                                | %               |       |
@@ -135,19 +135,3 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | sp   | Speed (km/h)                                     | 0            |
 | evt  | Unknown (Possibly Event Type)                    | 240          |
 
-
-## GNSS reference
-
-- 0 - GNSS OFF
-- 1 – GNSS ON with fix
-- 2 - GNSS ON without fix
-- 3 - GNSS sleep
-
-## RSSI refernce
-
-- 0	=< -111 or not known/not detectable
-- 1	< -101
-- 2	< -93
-- 3	< -83
-- 4	< -73
-- 5	>= -73
