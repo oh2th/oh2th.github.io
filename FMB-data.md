@@ -45,7 +45,7 @@ As collected and combined from VW ID.3 (2023) and Fiat Ducato.
 | 410  | OEM Battery Charge State                   | 0/1             | 0 = Not Charging, 1 = Charging |
 | 411  | OEM Battery Charge Level                   | %               |       |
 | 412	 | Unknown                                    | °C              |       |
-| 449  | Ignition On Counter                        | count           |       |
+| 449  | Ignition On Counter                        | s               |       |
 | 543  | Hybrid System Voltage                      | V               |       |
 | 544  | Hybrid System Current                      | A               |       |
 | 755  | Range Remaining                            | km              |       |
@@ -57,9 +57,9 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 
 | Key  | Description                                      | Sample Value |
 |------|--------------------------------------------------|--------------|
-| 12   | Fuel Used GPS (0.001 l)                         | 351          |
-| 13   | Fuel Rate GPS (0.01 l/100km)                    | 107          |
-| 15   | Eco Score (factor 0.01)                         | 1000         |
+| 12   | Fuel Used GPS (0.001 l)                          | 351          |
+| 13   | Fuel Rate GPS (0.01 l/100km)                     | 107          |
+| 15   | Eco Score (factor 0.01)                          | 1000         |
 | 16   | Total Odometer by FMB GPS (m)                    | 8235, 8243, 8254, 8267, 8313, 8415, 8527, 8582, 8636 |
 | 21   | GSM Signal (RSSI)                                | 3 (RSSI: <-83) |
 | 30   | Number of DTC - Detected Error Codes             | 0            |
@@ -73,26 +73,26 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | 67   | FMB Internal Battery (mV)                        | 4024, 4024, 4025, 4024, 4024, 4024, 4024, 4024, 4077 |
 | 68   | FMB Internal Battery (mA)                        | 100          |
 | 69   | GNSS Status                                      | 1 (GNSS ON with fix) |
-| 80   | Data Mode                                       | 0 (Home On Stop) |
-| 113  | Battery Level % (Unknown which battery)         | 100          |
+| 80   | Data Mode                                        | 0 (Home On Stop) |
+| 113  | Battery Level % (Unknown which battery)          | 100          |
 | 181  | GNSS PDOP (Position Dilution of Precision)       | 14, 15, 15, 14, 16, 17, 17, 15, 17 |
 | 182  | GNSS HDOP (Horizontal Dilution of Precision)     | 7, 6, 6, 7, 7, 8, 8, 8, 8          |
-| 199  | Trip Odometer (m)                               | 16314        |
+| 199  | Trip Odometer (m)                                | 16314        |
 | 200  | Sleep Mode (0: No Sleep, 1: GPS Sleep, 2: Deep Sleep, 3: Online Sleep, 4: Ultra Sleep) | 0 (No Sleep)  |
-| 205  | GSM Cell ID                                     | 32042        |
-| 206  | GSM Area Code                                   | 4119         |
+| 205  | GSM Cell ID                                      | 32042        |
+| 206  | GSM Area Code                                    | 4119         |
 | 239  | Ignition (0 = Off, 1 = On)                       | 1            |
 | 240  | Movement (0 = Off, 1 = On)                       | 1            |
 | 241  | Active GSM Operator MNC, MNI                     | 24491        |
 | 256  | VIN (Vehicle Identification Number)              | WVWZZZ.... |
-| 303  | Instant Movement                                | 0            |
-| 383  | AXL Calibration Status (1 = Calibrated)        | 1            |
-| 387  | GNSS Position (Latitude + Longitude + Speed)    | `+601970.5000+0245902.9667+000.021/` |
+| 303  | Instant Movement                                 | 0            |
+| 383  | AXL Calibration Status (1 = Calibrated)          | 1            |
+| 387  | GNSS Position (Latitude + Longitude + Speed)     | `+601970.5000+0245902.9667+000.021/` |
 | 389  | Vehicle Odometer Value (km)                      | 23689        |
 | 410  | OEM Battery Charge State (0 = Not Charging, 1 = Charging) | 1            |
 | 411  | OEM Battery Charge Level (%)                     | 87           |
-| 412  | Unknown            | 16, 17       |
-| 449  | Ignition On Counter                             | 4844         |
+| 412  | Unknown                                          | 16, 17       |
+| 449  | Ignition On                                      | 4844         |
 | 543  | Hybrid System Voltage (V)                        | 1023         |
 | 544  | Hybrid System Current (A)                        | -858, -1021, -1008, -942, -342, -30, -84, -78, -49 |
 | 755  | Range Remaining (km)                             | 243          |
@@ -126,7 +126,7 @@ https://wiki.teltonika-gps.com/view/FMB003_Teltonika_Data_Sending_Parameters_ID
 | 241  | Active GSM Operator (MNC 244, MNI 91 = Telia FI) | 24491        |
 | 387  | GNSS Position (Latitude + Longitude + Speed)     | `+601970.3000+0245902.4000+000.022/` |
 | 443  | Unknown                                          |              |
-| 449  | Ignition On Counter                              | 615          |
+| 449  | Ignition On                                      | 615          |
 | ts   | Timestamp (ms)                                   | 1742967958000 |
 | pr   | Unknown                                          | 0            |
 | latlng | Latitude & Longitude (Parsed)                  | 60.197030, 24.590240 |
