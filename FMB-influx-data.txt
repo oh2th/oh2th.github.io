@@ -1,0 +1,52 @@
+Idle VW ID.3
+
+> show field keys
+name: teltonika
+fieldKey                     fieldType
+--------                     ---------
+acceleration_x               float
+acceleration_y               float
+acceleration_z               float
+active_gsm_operator          integer
+altitude                     integer
+angle                        integer
+battery_level_pct            integer
+event_id                     integer
+fmb_external_voltage         float
+fmb_internal_battery_current float
+fmb_internal_battery_voltage float
+gps_fuel_used                float
+gps_total_odometer_m         float
+gsm_area_code                integer
+gsm_cell_id                  integer
+ignition_on_s                float
+latitude                     float
+longitude                    float
+pr                           float
+satellites                   integer
+speed_kmh                    float
+
+> show tag keys
+name: teltonika
+tagKey
+------
+acceleration_calibration_status
+data_mode
+gnss_status
+gps_location
+gsm_signal_strength
+ignition
+imei
+model
+movement
+sleep_mode
+
+> select * from teltonika
+name: teltonika
+time                 acceleration_calibration_status acceleration_x acceleration_y acceleration_z active_gsm_operator altitude angle battery_level_pct data_mode event_id fmb_external_voltage fmb_internal_battery_current fmb_internal_battery_voltage gnss_status gps_fuel_used gps_location                       gps_total_odometer_m gsm_area_code gsm_cell_id gsm_signal_strength ignition ignition_on_s imei            latitude  longitude model  movement pr satellites sleep_mode speed_kmh
+----                 ------------------------------- -------------- -------------- -------------- ------------------- -------- ----- ----------------- --------- -------- -------------------- ---------------------------- ---------------------------- ----------- ------------- ------------                       -------------------- ------------- ----------- ------------------- -------- ------------- ----            --------  --------- -----  -------- -- ---------- ---------- ---------
+2025-04-05T04:47:24Z 3                               39             -50            8              24491               0        0     100               0         0        12.457               0                            4.029                        3           6.102         +601969.3833+0245902.5167+000.000/ 196153               4119          32104       3                   0        37073         353201351561615 60.196938 24.590252 fmb003 0        0  0          3          0
+2025-04-05T05:17:24Z 3                               44             -48            10             24491               0        0     100               0         0        12.254               0                            4.029                        3           6.102         +601969.3833+0245902.5167+000.000/ 196153               4119          11690       3                   0        37073         353201351561615 60.196938 24.590252 fmb003 0        0  0          3          0
+2025-04-05T05:47:24Z 3                               38             -48            21             24491               0        0     100               0         0        12.435               0                            4.029                        3           6.102         +601969.3833+0245902.5167+000.000/ 196153               4119          32104       3                   0        37073         353201351561615 60.196938 24.590252 fmb003 0        0  0          3          0
+2025-04-05T06:17:24Z 3                               42             -48            12             24491               0        0     100               0         0        12.438               0                            4.028                        3           6.102         +601969.3833+0245902.5167+000.000/ 196153               4119          32104       4                   0        37073         353201351561615 60.196938 24.590252 fmb003 0        0  0          3          0
+2025-04-05T06:47:24Z 3                               38             -48            10             24491               0        0     100               0         0        12.422               0                            4.028                        3           6.102         +601969.3833+0245902.5167+000.000/ 196153               4119          11690       4                   0        37073         353201351561615 60.196938 24.590252 fmb003 0        0  0          3          0
