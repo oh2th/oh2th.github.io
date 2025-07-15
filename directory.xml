@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CiscoIPPhoneDirectory>
+  <Title>HamPY puhelinluettelo</Title>
+  <Prompt>Valitse numero</Prompt>
+  <DirectoryEntry>
+    <Name>HamPY (Yleinen ryhmäpuhelu)</Name>
+    <Telephone>059</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>HamPY (Rudi)</Name>
+    <Telephone>99049</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>HamPY (Kekkonen)</Name>
+    <Telephone>99259</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>HamPY (Yleinen testinumero)</Name>
+    <Telephone>99999</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2GAY</Name>
+    <Telephone>13231</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2EAP</Name>
+    <Telephone>14291</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6EYM (työkone)</Name>
+    <Telephone>14521</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6EYM (kotikone)</Name>
+    <Telephone>14522</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6EYM (mobile)</Name>
+    <Telephone>14523</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3MBC (Säätämö)</Name>
+    <Telephone>14561</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3MBC (Asumus)</Name>
+    <Telephone>14562</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3MBC (Mobiili)</Name>
+    <Telephone>14568</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3CUF</Name>
+    <Telephone>14721</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6AAD (Radiohuone)</Name>
+    <Telephone>15171</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6AAD (FAX)</Name>
+    <Telephone>15179</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2EWL (Mobiili)</Name>
+    <Telephone>15301</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH8TA (Radiohuone)</Name>
+    <Telephone>16021</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH8TA (Säätämö)</Name>
+    <Telephone>16022</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH8TA (Kaiutinpuhelin)</Name>
+    <Telephone>16023</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH8TA (Hissikoppi)</Name>
+    <Telephone>16024</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2LAK (Erik toimisto)</Name>
+    <Telephone>20011</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2HGL (luuri)</Name>
+    <Telephone>20041</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2HGL (tabletti)</Name>
+    <Telephone>20042</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2HGL (hima pc)</Name>
+    <Telephone>20043</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2GLG</Name>
+    <Telephone>20051</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2LFM (Android luuri)</Name>
+    <Telephone>20151</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2LFM (Kotitoimisto Kauklahdessa)</Name>
+    <Telephone>20152</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2LFM (Lieksa)</Name>
+    <Telephone>20153</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2LFM (Anttola)</Name>
+    <Telephone>20154</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2K  (Radiohuone (asennuksessa))</Name>
+    <Telephone>20171</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2JS</Name>
+    <Telephone>20331</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2NJR (Nummi Hamshack)</Name>
+    <Telephone>20341</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2NJR (Nummi Kellari)</Name>
+    <Telephone>20342</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2NJR (Testiluuri - ei aina QRV)</Name>
+    <Telephone>20343</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2NJR (Kaskis Hamshack / työhuone)</Name>
+    <Telephone>20344</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2NJR (Kaskis Säätämö)</Name>
+    <Telephone>20345</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2NJR (Kaskis Saunaosasto)</Name>
+    <Telephone>20348</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2BUF (hamshack)</Name>
+    <Telephone>20381</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2BUF (Android)</Name>
+    <Telephone>20383</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2KXA</Name>
+    <Telephone>20351</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH7KAA</Name>
+    <Telephone>20301</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2LFM (Keikkaluuri (leirit, muut /M ja /P -tilanteet))</Name>
+    <Telephone>20411</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2LFM (Keikkaluuri 2 (analog, leirit, muut /M ja /P tilanteet)</Name>
+    <Telephone>20412</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2TH</Name>
+    <Telephone>20581</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2HNW</Name>
+    <Telephone>21031</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2FXI (hamshack)</Name>
+    <Telephone>21451</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2FXI (hamshack secondary)</Name>
+    <Telephone>21452</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2FXI (FAX)</Name>
+    <Telephone>21459</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2SAR (Kännykkä)</Name>
+    <Telephone>22191</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2SAR (Tabletti)</Name>
+    <Telephone>22192</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH2EXE (Matkapuhelin)</Name>
+    <Telephone>22501</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3RUX (OH3RUX site huoltopuhelin)</Name>
+    <Telephone>30301</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3LJU (hamshack)</Name>
+    <Telephone>30361</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3LJU (Kännykkä)</Name>
+    <Telephone>30362</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH5HCJ (Kännykkä)</Name>
+    <Telephone>50011</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH5HCJ (Koti)</Name>
+    <Telephone>50012</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH5HCJ (Ipad)</Name>
+    <Telephone>50013</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6TX (hamshack)</Name>
+    <Telephone>60031</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6TX (kännykkä)</Name>
+    <Telephone>60032</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6PRO (Jari Hyvärinen, Laukaa)</Name>
+    <Telephone>60801</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH6HL (Kännykkä)</Name>
+    <Telephone>69691</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH7JEV (Veli-Matti Pappinen)</Name>
+    <Telephone>70041</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH8WX (Koti)</Name>
+    <Telephone>80071</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH8WX (Kännykkä)</Name>
+    <Telephone>80072</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>OH3RUX Virrat (Saittipuhelin OH2RUX Virrat)</Name>
+    <Telephone>73244303</Telephone>
+  </DirectoryEntry>
+</CiscoIPPhoneDirectory>
