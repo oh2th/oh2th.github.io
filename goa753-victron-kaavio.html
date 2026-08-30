@@ -246,7 +246,6 @@
         <text class="t-sub-s" x="323" y="479">SoC / %-varaus · VE.Direct</text>
 
         <!-- rail dots -->
-        <circle class="dot-pos" cx="560" cy="156" r="4.5"/>
         <circle class="dot-pos" cx="675" cy="156" r="4.5"/>
         <circle class="dot-pos" cx="880" cy="156" r="4.5"/>
         <circle class="dot-pos" cx="1000" cy="156" r="4.5"/>
@@ -266,14 +265,6 @@
         <text class="t-fuse-v" x="675" y="229">200 A</text>
         <text class="t-gauge" x="686" y="283">35 mm²</text>
         <text class="t-gauge" x="664" y="452" text-anchor="end">35 mm²</text>
-
-        <!-- ===== Orion XS output tap (Vaihe 3) — crosses - rail without connecting ===== -->
-        <path class="v3-pos" d="M560,156 L560,200 M560,236 L560,786"/>
-        <rect class="fuse" x="525" y="200" width="70" height="36" rx="4"/>
-        <text class="t-fuse-l" x="560" y="215">MEGA</text>
-        <text class="t-fuse-v" x="560" y="229">60 A</text>
-        <text class="t-gauge" x="548" y="300" text-anchor="end">20 mm²</text>
-        <text class="t-sub-s" x="548" y="340" text-anchor="end">Orion OUT+</text>
 
         <!-- ===== SmartSolar MPPT ===== -->
         <path class="tap-pos" d="M880,156 L880,200 M880,236 L880,540"/>
@@ -302,17 +293,18 @@
         <text class="t-gauge" x="905" y="659" text-anchor="end">PV</text>
         <text class="t-gauge" x="1004" y="700">6 mm²</text>
 
-        <!-- ===== EBL Wohnraum + tap ===== -->
+        <!-- ===== EBL Wohnraum + tap (asunto-osa + vaiheessa 3 ajolataus EBL:n releen kautta) ===== -->
         <path class="tap-pos" d="M1000,156 L1000,200 M1000,236 L1000,798"/>
         <rect class="fuse" x="965" y="200" width="70" height="36" rx="4"/>
         <text class="t-fuse-l" x="1000" y="215">MEGA</text>
-        <text class="t-fuse-v" x="1000" y="229" style="font-size:8.5px">40–80 A</text>
-        <text class="t-gauge" x="1012" y="420">johdon mukaan</text>
-        <text class="t-sub-s" x="1000" y="330">EBL Wohnraum +</text>
+        <text class="t-fuse-v" x="1000" y="229">50 A</text>
+        <text class="t-gauge" x="1012" y="420">16 mm²</text>
+        <text class="t-sub-s" x="1000" y="326">EBL Wohnraum +</text>
+        <text class="t-sub-s" x="1000" y="340">asunto + ajolataus</text>
 
         <!-- ===== EBL Masse − tap (long run, carries front negative back through shunt) ===== -->
-        <path class="tap-neg" d="M790,466 L790,858"/>
-        <text class="t-gauge" x="760" y="620" text-anchor="end">20 mm²</text>
+        <path class="tap-neg" d="M790,466 L790,850"/>
+        <text class="t-gauge" x="760" y="620" text-anchor="end">16 mm²</text>
         <text class="t-sub-s" x="786" y="500" text-anchor="end">EBL Masse −</text>
 
         <!-- ================= OHJAAMO (inset) ================= -->
@@ -333,38 +325,47 @@
         <text class="t-mono-c" x="460" y="870">12/12-50 A DC-DC</text>
         <text class="t-v3" x="460" y="887">VAIHE 3</text>
         <circle class="dot-pos" cx="380" cy="860" r="4.5"/>
-        <circle class="dot-pos" cx="475" cy="826" r="4.5"/>
-        <circle class="dot-neg" cx="475" cy="916" r="4.5"/>
-        <text class="t-sub-s" x="378" y="878" text-anchor="end">IN+</text>
-        <text class="t-sub-s" x="492" y="820" text-anchor="start">OUT+</text>
-        <text class="t-sub-s" x="486" y="930" text-anchor="start">−</text>
+        <circle class="dot-pos" cx="540" cy="878" r="4.5"/>
+        <circle class="dot-neg" cx="460" cy="916" r="4.5"/>
+        <text class="t-sub-s" x="376" y="878" text-anchor="end">IN+</text>
+        <text class="t-sub-s" x="536" y="872" text-anchor="end">OUT+</text>
+        <text class="t-sub-s" x="460" y="931" text-anchor="middle">−</text>
 
         <!-- EBL 119 -->
-        <rect class="box" x="790" y="800" width="240" height="145" rx="11"/>
-        <text class="t-cmp-sm" x="912" y="836">EBL 119 (Schaudt)</text>
-        <text class="t-sub" x="912" y="852">asunto-osan sähkökeskus</text>
-        <text class="t-sub-s" x="912" y="876">Vaihe 2: sisäinen laturisulake</text>
-        <text class="t-sub-s" x="912" y="889">irrotetaan käytöstä</text>
+        <rect class="box" x="790" y="800" width="260" height="150" rx="11"/>
+        <text class="t-cmp-sm" x="930" y="826">EBL 119 (Schaudt)</text>
+        <text class="t-sub" x="930" y="841">asunto-osan sähkökeskus</text>
+        <text class="t-sub-s" x="930" y="862">Vaihe 2: sisäinen laturisulake irrotetaan</text>
         <circle class="dot-pos" cx="1000" cy="800" r="4.5"/>
-        <circle class="dot-neg" cx="790" cy="858" r="4.5"/>
-        <text class="t-sub-s" x="784" y="847" text-anchor="end">Masse −</text>
+        <circle class="dot-neg" cx="790" cy="850" r="4.5"/>
+        <text class="t-sub-s" x="784" y="845" text-anchor="end">Masse −</text>
+        <circle class="dot-pos" cx="790" cy="898" r="4.5"/>
+        <text class="t-sub-s" x="784" y="894" text-anchor="end">Starter&#8203;batterie</text>
+        <!-- EBL internal D+ relay: Starterbatterie <-> Wohnraum, closed while driving -->
+        <path class="v3-pos" d="M790,898 L1000,898 L1000,808"/>
+        <text class="t-v3" x="912" y="884">D+ RELE · AJOSSA</text>
+        <text class="t-sub-s" x="912" y="924">Starter ↔ Wohnraum kytkeytyy ajossa</text>
 
-        <!-- Vaihe 3 wiring: starter+ -> Orion IN+ -->
-        <path class="v3-pos" d="M235,852 L300,852 L300,860 L380,860"/>
+        <!-- Vaihe 3: käynnistysakku + -> Orion IN+ (alkup. johto EBL:lle katkaistaan) -->
+        <path class="v3-pos" d="M235,852 L300,852 L300,860 L370,860"/>
         <rect class="fuse" x="305" y="843" width="50" height="26" rx="3"/>
         <text class="t-fuse-v" x="330" y="860" style="font-size:9px">60 A</text>
-        <text class="t-gauge" x="238" y="878">20 mm²</text>
+        <text class="t-gauge" x="248" y="836">16 mm²</text>
+        <text class="t-sub-s" x="238" y="893" text-anchor="start">alkup. johto EBL:lle katkaistaan</text>
 
-        <!-- Vaihe 3 wiring: Orion OUT+ tap arrives and routes to Orion -->
-        <path class="v3-pos" d="M560,786 L560,802 L475,802 L475,826"/>
+        <!-- Vaihe 3: Orion OUT+ -> EBL Starterbatterie -->
+        <path class="v3-pos" d="M540,878 L560,878 L560,898 L790,898"/>
+        <rect class="fuse" x="628" y="885" width="50" height="26" rx="3"/>
+        <text class="t-fuse-v" x="653" y="902" style="font-size:9px">60 A</text>
+        <text class="t-gauge" x="602" y="872">16 mm²</text>
 
-        <!-- Vaihe 3 wiring: Orion − -> front common ground -->
-        <path class="v3-neg" d="M475,916 L475,962"/>
+        <!-- Vaihe 3: Orion − -> front common ground -->
+        <path class="v3-neg" d="M460,916 L460,962"/>
 
         <!-- front common ground bus -->
         <path class="wire-neg" d="M167,940 L167,962"/>
-        <path class="wire-neg" d="M167,962 L790,962"/>
-        <path class="tap-neg" d="M790,858 L790,962"/>
+        <path class="wire-neg" d="M167,962 L760,962"/>
+        <path class="tap-neg" d="M760,962 L760,850 L790,850"/>
 
         <!-- chassis ground symbol -->
         <path class="gnd" d="M620,962 L620,986"/>
@@ -375,11 +376,11 @@
       </svg>
     </div>
     <figcaption>
-      Plus kulkee hupiakulta päävirtakytkimen (275&nbsp;A) ja Class-T-sulakkeen (200&nbsp;A) kautta plus-jakokiskolle, josta jokainen kuluttaja oman MEGA-sulakkeensa takaa. Miinus kulkee <strong>vain</strong> SmartShuntin kautta miinus-jakokiskolle. <strong>Ajonaikainen lataus:</strong> Orion&nbsp;XS ottaa virran käynnistysakulta (IN+) ja syöttää säädellyn LiFePO4-latauksen pitkällä 20&nbsp;mm² johdolla perän plus-jakokiskolle (OUT+). Orionin miinus kytketään lyhyesti etupään yhteiseen maapisteeseen (EBL&nbsp;Masse−); paluuvirta kulkee saman 20&nbsp;mm² Masse-johdon kautta SmartShuntin läpi, joten varauslaskenta pysyy oikeana. <strong>Johtopaksuudet:</strong> 35&nbsp;mm² vain akun ja MultiPlussan päälinjalla, MPPT 6&nbsp;mm², EBL Wohnraum alkuperäisen johdon mukaan, Orionin vedot 20&nbsp;mm². Aurinkopaneelit (PV, jopa 100&nbsp;V) kytketään MPPT:n PV-tuloon 6&nbsp;mm² johdoilla.
+      Plus kulkee hupiakulta päävirtakytkimen (275&nbsp;A) ja Class-T-sulakkeen (200&nbsp;A) kautta plus-jakokiskolle, josta jokainen kuluttaja oman MEGA-sulakkeensa takaa. Miinus kulkee <strong>vain</strong> SmartShuntin kautta miinus-jakokiskolle. <strong>Ajonaikainen lataus EBL:n kautta:</strong> Orion&nbsp;XS kytketään sarjaan käynnistysakun ja EBL:n Starterbatterie-navan väliin (alkuperäinen johto katkaistaan). Ajossa D+ sulkee EBL:n sisäisen releen, ja Orionin säädelty lataus jakautuu EBL:n kautta Wohnraum+-johtoa pitkin perän plus-jakokiskolle ja hupiakkuun; paluu kulkee Masse−-johtoa SmartShuntin läpi, joten varauslaskenta pysyy oikeana. EBL:n sisäinen rele on virran pullonkaula – rajoita Orionin lähtövirta sen keston mukaan. <strong>Johtopaksuudet:</strong> 35&nbsp;mm² vain akun ja MultiPlussan päälinjalla, MPPT 6&nbsp;mm², EBL:n Wohnraum+ ja Masse− 16&nbsp;mm², Orionin lyhyet vedot 16&nbsp;mm². Aurinkopaneelit (PV, jopa 100&nbsp;V) kytketään MPPT:n PV-tuloon 6&nbsp;mm² johdoilla.
     </figcaption>
   </figure>
 
-  <p class="note">Kuvassa 12&nbsp;V DC ja PV-tulo. Ei sisällä 230&nbsp;V AC -kytkentöjä eikä data-/väyläkaapeleita (VE.Bus, VE.Direct). Liitos on merkitty täytetyllä pisteellä; ilman pistettä risteävät johdot (esim. MPPT batt+ ja Orion OUT+ miinus-jakokiskon yli) eivät ole kytköksissä. Etupään miinus on <strong>yksi</strong> yhteinen maapiste (EBL&nbsp;Masse−); perän miinus-jakokiskoa ei maadoiteta erikseen runkoon, jotta vältetään maasilmukka. Käynnistysakun alkuperäisen EBL-johdon voi jättää paikoilleen tai poistaa ja antaa Orionin ”bidirectional”-toiminnon ylläpitää käynnistysakkua.</p>
+  <p class="note">Kuvassa 12&nbsp;V DC ja PV-tulo. Ei sisällä 230&nbsp;V AC -kytkentöjä eikä data-/väyläkaapeleita (VE.Bus, VE.Direct). Liitos on merkitty täytetyllä pisteellä; ilman pistettä risteävät johdot (esim. MPPT batt+ miinus-jakokiskon yli) eivät ole kytköksissä. Etupään miinus on <strong>yksi</strong> yhteinen maapiste (EBL&nbsp;Masse−); perän miinus-jakokiskoa ei maadoiteta erikseen runkoon, jotta vältetään maasilmukka. Ajolataus edellyttää että EBL:n D+ toimii (moottori käy → sisäinen rele kytkee Starter- ja Wohnraum-piirit yhteen); tarkista EBL 119:n käsikirjasta releen / laturilatauksen kestoraja ja aseta Orionin lähtövirtaraja sen mukaan.</p>
 </div>
 </body>
 </html>
