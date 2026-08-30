@@ -165,7 +165,7 @@
   <header>
     <p class="eyebrow">Matkailuauto · EBL 119 + Victron</p>
     <h1>12 V DC — plus- ja miinuskytkennät</h1>
-    <p class="lede">Koko järjestelmän 12&nbsp;voltin plus- ja miinusjohdotus yhdessä kuvassa. Lynx-kiskosto on korvattu erillisillä 250&nbsp;A jakokiskoilla ja MEGA-sulakkeilla.</p>
+    <p class="lede">Koko järjestelmän 12&nbsp;voltin plus- ja miinusjohdotus yhdessä kuvassa. Lynx-kiskosto on korvattu erillisillä 250&nbsp;A jakokiskoilla ja MEGA-sulakkeilla. Kaapelit mitoitettu virran mukaan: 35&nbsp;mm² vain akun ja MultiPlussan päälinjalla, muualla ohuempi.</p>
   </header>
 
   <ul class="legend">
@@ -271,6 +271,8 @@
         <rect class="fuse" x="900" y="210" width="70" height="36" rx="4"/>
         <text class="t-fuse-l" x="935" y="225">MEGA</text>
         <text class="t-fuse-v" x="935" y="239">30 A</text>
+        <text class="t-mono" x="946" y="293">6 mm²</text>
+        <text class="t-mono" x="946" y="456">6 mm²</text>
         <text class="t-sub-s" x="935" y="430">PV-paneelien tulo ei tässä kuvassa</text>
 
         <!-- ===== EBL feed (Wohnraum) ===== -->
@@ -278,10 +280,10 @@
         <path class="tap-neg" d="M990,620 L990,484"/>
         <rect class="fuse" x="1025" y="210" width="70" height="36" rx="4"/>
         <text class="t-fuse-l" x="1060" y="225">MEGA</text>
-        <text class="t-fuse-v" x="1060" y="239">80 A</text>
+        <text class="t-fuse-v" x="1060" y="239">40–80 A</text>
         <text class="t-mono" x="1072" y="545" fill="var(--pos)">Wohnraum +</text>
         <text class="t-mono" x="978" y="545" fill="var(--neg)" text-anchor="end">Masse −</text>
-        <text class="t-sub-s" x="1025" y="560">alkuperäiset EBL-johdot vedetään perälle</text>
+        <text class="t-sub-s" x="1025" y="560">alkuperäiset EBL-johdot perälle · sulake johdon mukaan</text>
 
         <!-- ================= FRONT ZONE (inset) ================= -->
         <rect class="inset" x="556" y="556" width="628" height="322" rx="14"/>
@@ -332,7 +334,7 @@
       </svg>
     </div>
     <figcaption>
-      Plus kulkee hupiakulta päävirtakytkimen (275&nbsp;A) ja Class-T-sulakkeen (200&nbsp;A) kautta plus-jakokiskolle, josta jokainen kuluttaja erillisen MEGA-sulakkeen takaa. Miinus kulkee <strong>vain</strong> SmartShuntin kautta miinus-jakokiskolle — ei koskaan suoraan akun napaan, muuten varauslaskenta menee pieleen. Vaiheessa&nbsp;3 Orion&nbsp;XS kytketään ohjaamossa käynnistyssyötön väliin ja sen miinus vedetään erillisellä johdolla perälle miinus-jakokiskolle.
+      Plus kulkee hupiakulta päävirtakytkimen (275&nbsp;A) ja Class-T-sulakkeen (200&nbsp;A) kautta plus-jakokiskolle, josta jokainen kuluttaja erillisen MEGA-sulakkeen takaa. Miinus kulkee <strong>vain</strong> SmartShuntin kautta miinus-jakokiskolle — ei koskaan suoraan akun napaan, muuten varauslaskenta menee pieleen. Vaiheessa&nbsp;3 Orion&nbsp;XS kytketään ohjaamossa käynnistyssyötön väliin ja sen miinus vedetään erillisellä johdolla perälle miinus-jakokiskolle. Vain akun ja MultiPlussan välinen päälinja on 35&nbsp;mm² (invertterin täysi virta, 200&nbsp;A sulakkeet); MPPT-veto on 6&nbsp;mm² ja EBL Wohnraum mitoitetaan alkuperäisen johdon mukaan (sulake ohuimman johdon mukaan).
     </figcaption>
   </figure>
 
