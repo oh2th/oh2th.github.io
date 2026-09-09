@@ -205,7 +205,7 @@
 
   <figure>
     <div class="scroll">
-      <svg viewBox="0 0 1280 1010" role="img" aria-label="Matkailuauton 12 voltin tasavirtajärjestelmän kytkentäkaavio kolmessa sijaintipaikassa. Matkustajan penkin alla: LiFePO4-hupiakku, päävirtakytkin 275 A, Class-T-sulake 200 A, SmartShunt, sekä plus- ja miinus-jakokisko MEGA-sulakepidikkeineen. Jakokiskot ovat järjestelmän keskus. Niiltä lähtevät pitkät vedot keittiön alakaappiin, jossa ovat MultiPlus (35–50 mm², 200 A sulake), SmartSolar MPPT (6 mm², 30 A sulake), aurinkopaneelien PV-tulo ja Cerbo GX. Lyhyet 16 mm² vedot menevät kuljettajan penkille EBL 119:n Wohnraum-plussaan ja Masse-miinukseen. LiFePO4-akun miinusnapaan kytketään vain SmartShunt. Kuljettajan penkin alla käynnistysakku, EBL 119 ja Orion XS. Vaihe 3: käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto katkaistaan ja Orion XS kytketään väliin, IN plus 40 A sulakkeella, OUT plus 30 A sulakkeella EBL:n Starterbatterie-tuloon, D plus ohjaa Orionin Remote-napaa, lähtövirta rajoitetaan noin 25 ampeeriin.">
+      <svg viewBox="0 0 1280 1010" role="img" aria-label="Matkailuauton 12 voltin tasavirtajärjestelmän kytkentäkaavio kolmessa sijaintipaikassa. Matkustajan penkin alla: LiFePO4-hupiakku, päävirtakytkin 275 A, Class-T-sulake 200 A, SmartShunt, sekä plus- ja miinus-jakokisko MEGA-sulakepidikkeineen. Jakokiskot ovat järjestelmän keskus. Niiltä lähtevät pitkät vedot keittiön alakaappiin, jossa ovat MultiPlus 12/1600/70 (50 mm², 200 A sulake), SmartSolar MPPT (6 mm², 30 A sulake), aurinkopaneelien PV-tulo ja Cerbo GX. Lyhyet 16 mm² vedot menevät kuljettajan penkille EBL 119:n Wohnraum-plussaan ja Masse-miinukseen. LiFePO4-akun miinusnapaan kytketään vain SmartShunt. Kuljettajan penkin alla käynnistysakku, EBL 119 ja Orion XS. Vaihe 3: käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto katkaistaan ja Orion XS kytketään väliin, IN plus 40 A sulakkeella, OUT plus 30 A sulakkeella EBL:n Starterbatterie-tuloon, D plus ohjaa Orionin Remote-napaa, lähtövirta rajoitetaan noin 25 ampeeriin.">
 
         <!-- ================= ZONE FRAMES ================= -->
         <rect class="inset" x="30" y="92" width="545" height="560" rx="14"/>
@@ -231,8 +231,8 @@
         <circle class="dot-neg" cx="205" cy="462" r="4.5"/>
         <text class="t-term" x="192" y="347" fill="var(--pos)" text-anchor="end">+</text>
         <text class="t-term" x="192" y="475" fill="var(--neg)" text-anchor="end">–</text>
-        <text class="t-gauge" x="240" y="300">35 mm²</text>
-        <text class="t-gauge" x="240" y="486">35 mm²</text>
+        <text class="t-gauge" x="240" y="300">50 mm²</text>
+        <text class="t-gauge" x="240" y="486">50 mm²</text>
 
         <!-- main switch + Class-T -->
         <rect class="box" x="262" y="116" width="108" height="46" rx="7"/>
@@ -275,8 +275,8 @@
         <text class="t-fuse-l" x="556" y="212">MEGA</text>
         <text class="t-fuse-v" x="556" y="226">200 A</text>
         <path class="tap-neg" d="M546,250 L815,250"/>
-        <text class="t-sub-s" x="705" y="190" text-anchor="middle">MultiPlus · 35–50 mm² · pitkä veto keittiöön</text>
-        <text class="t-gauge" x="700" y="266" text-anchor="middle">35–50 mm²</text>
+        <text class="t-sub-s" x="705" y="190" text-anchor="middle">MultiPlus · 50 mm² · pitkä veto keittiöön</text>
+        <text class="t-gauge" x="700" y="266" text-anchor="middle">50 mm²</text>
 
         <!-- ===== MPPT feed (long run to kitchen) ===== -->
         <path class="tap-pos" d="M511,300 L525,300 M587,300 L720,300 L720,360 L815,360"/>
@@ -303,8 +303,8 @@
         <!-- MultiPlus -->
         <rect class="box" x="815" y="175" width="190" height="106" rx="12"/>
         <text class="t-cmp" x="910" y="214">Victron MultiPlus</text>
-        <text class="t-mono-c" x="910" y="234">12 / 1200 / 50</text>
-        <text class="t-sub" x="910" y="252">invertteri / laturi</text>
+        <text class="t-mono-c" x="910" y="234">12 / 1600 / 70</text>
+        <text class="t-sub" x="910" y="252">1300 W · 70 A laturi</text>
 
         <!-- SmartSolar MPPT -->
         <rect class="box" x="815" y="330" width="190" height="100" rx="12"/>
@@ -405,7 +405,7 @@
       </svg>
     </div>
     <figcaption>
-      Jakokiskot ovat järjestelmän keskus <strong>matkustajan penkin alla</strong> akun vieressä: LiFePO4 → päävirtakytkin (275&nbsp;A) → Class-T (200&nbsp;A) → plus-jakokisko; LiFePO4&nbsp;− → SmartShunt → miinus-jakokisko. <strong>Akun miinusnapaan kytketään vain SmartShunt.</strong> Jakokiskoilta lähtevät <strong>pitkät vedot keittiön alakaappiin</strong> (MultiPlus 35–50&nbsp;mm² / 200&nbsp;A, MPPT 6&nbsp;mm² / 30&nbsp;A) ja <strong>lyhyet 16&nbsp;mm² vedot kuljettajan penkille</strong> (EBL Wohnraum+ ja Masse−, ~1,5&nbsp;m). <strong>Ajonaikainen lataus (Schaudtin ohje):</strong> käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto <strong>katkaistaan</strong> ja Orion&nbsp;XS kytketään väliin (IN+ 40&nbsp;A, OUT+ EBL:n Starterbatterie-tuloon 30&nbsp;A, IN−/OUT− Masse, D+ → Remote). Ajossa EBL yhdistää sisäisesti Starterbatterie- ja Wohnraum-piirit, jolloin lataus menee Wohnraum+-johtoa pitkin jakokiskolle. Orionin lähtövirta rajoitetaan <strong>~25&nbsp;A:iin</strong> (EBL:n johdotus kestää ≤30&nbsp;A; sisäinen laturi 18&nbsp;A). Aurinkopaneelit (PV, jopa 100&nbsp;V) kytketään MPPT:n PV-tuloon.
+      Jakokiskot ovat järjestelmän keskus <strong>matkustajan penkin alla</strong> akun vieressä: LiFePO4 → päävirtakytkin (275&nbsp;A) → Class-T (200&nbsp;A) → plus-jakokisko; LiFePO4&nbsp;− → SmartShunt → miinus-jakokisko. <strong>Akun miinusnapaan kytketään vain SmartShunt.</strong> Jakokiskoilta lähtevät <strong>pitkät vedot keittiön alakaappiin</strong> (MultiPlus 12/1600/70 → 50&nbsp;mm² / 200&nbsp;A, MPPT 6&nbsp;mm² / 30&nbsp;A) ja <strong>lyhyet 16&nbsp;mm² vedot kuljettajan penkille</strong> (EBL Wohnraum+ ja Masse−, ~1,5&nbsp;m). <strong>Ajonaikainen lataus (Schaudtin ohje):</strong> käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto <strong>katkaistaan</strong> ja Orion&nbsp;XS kytketään väliin (IN+ 40&nbsp;A, OUT+ EBL:n Starterbatterie-tuloon 30&nbsp;A, IN−/OUT− Masse, D+ → Remote). Ajossa EBL yhdistää sisäisesti Starterbatterie- ja Wohnraum-piirit, jolloin lataus menee Wohnraum+-johtoa pitkin jakokiskolle. Orionin lähtövirta rajoitetaan <strong>~25&nbsp;A:iin</strong> (EBL:n johdotus kestää ≤30&nbsp;A; sisäinen laturi 18&nbsp;A). Aurinkopaneelit (PV, jopa 100&nbsp;V) kytketään MPPT:n PV-tuloon.
     </figcaption>
   </figure>
 
