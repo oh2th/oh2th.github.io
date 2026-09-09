@@ -209,7 +209,7 @@
 
   <figure>
     <div class="scroll">
-      <svg viewBox="0 0 1280 1010" role="img" aria-label="Matkailuauton 12 voltin tasavirtajärjestelmän kytkentäkaavio kolmessa sijaintipaikassa. Matkustajan penkin alla: LiFePO4-hupiakku, päävirtakytkin 275 A, Class-T-sulake 200 A, SmartShunt, sekä plus- ja miinus-jakokisko MEGA-sulakepidikkeineen. Jakokiskot ovat järjestelmän keskus. Niiltä lähtevät pitkät vedot keittiön alakaappiin, jossa ovat MultiPlus 12/1600/70 (50 mm², 200 A sulake), SmartSolar MPPT (6 mm², 30 A sulake), aurinkopaneelien PV-tulo ja Cerbo GX. Lyhyet 16 mm² vedot menevät kuljettajan penkille EBL 119:n Wohnraum-plussaan ja Masse-miinukseen. LiFePO4-akun miinusnapaan kytketään vain SmartShunt. Datakaapelit Cerbolle: MultiPlus VE.Bus-kaapelilla, MPPT VE.Direct-kaapelilla, SmartShunt VE.Direct 3 m, Orion XS VE.Direct 5 m. GX Touch 50 -näyttö tulee kulkuoven yläpuolelle, ja se kytketään Cerboon HDMI- ja USB-kaapelilla (2 m). Kuljettajan penkin alla käynnistysakku, EBL 119 ja Orion XS. Vaihe 3: käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto katkaistaan ja Orion XS kytketään väliin, IN plus 40 A sulakkeella, OUT plus 30 A sulakkeella EBL:n Starterbatterie-tuloon, D plus ohjaa Orionin Remote-napaa, lähtövirta rajoitetaan noin 25 ampeeriin.">
+      <svg viewBox="0 0 1280 1010" role="img" aria-label="Matkailuauton 12 voltin tasavirtajärjestelmän kytkentäkaavio kolmessa sijaintipaikassa. Matkustajan penkin alla: LiFePO4-hupiakku, päävirtakytkin 275 A, Class-T-sulake 200 A, SmartShunt, sekä plus- ja miinus-jakokisko ANL-sulakepidikkeineen. Jakokiskot ovat järjestelmän keskus. Niiltä lähtevät pitkät vedot keittiön alakaappiin, jossa ovat MultiPlus 12/1600/70 (50 mm², 200 A sulake), SmartSolar MPPT (6 mm², 35 A sulake), aurinkopaneelien PV-tulo ja Cerbo GX. Lyhyet 16 mm² vedot menevät kuljettajan penkille EBL 119:n Wohnraum-plussaan ja Masse-miinukseen. LiFePO4-akun miinusnapaan kytketään vain SmartShunt. Datakaapelit Cerbolle: MultiPlus VE.Bus-kaapelilla, MPPT VE.Direct-kaapelilla, SmartShunt VE.Direct 3 m, Orion XS VE.Direct 5 m. GX Touch 50 -näyttö tulee kulkuoven yläpuolelle, ja se kytketään Cerboon HDMI- ja USB-kaapelilla (2 m). Kuljettajan penkin alla käynnistysakku, EBL 119 ja Orion XS. Vaihe 3: käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto katkaistaan ja Orion XS kytketään väliin, IN plus 40 A sulakkeella, OUT plus 35 A sulakkeella EBL:n Starterbatterie-tuloon, D plus ohjaa Orionin Remote-napaa, lähtövirta rajoitetaan noin 25 ampeeriin.">
 
         <!-- ================= ZONE FRAMES ================= -->
         <rect class="inset" x="30" y="92" width="545" height="560" rx="14"/>
@@ -276,7 +276,7 @@
         <!-- ===== MultiPlus feed (long run to kitchen) ===== -->
         <path class="tap-pos" d="M511,215 L525,215 M587,215 L790,215 L790,205 L815,205"/>
         <rect class="fuse" x="525" y="198" width="62" height="34" rx="4"/>
-        <text class="t-fuse-l" x="556" y="212">MEGA</text>
+        <text class="t-fuse-l" x="556" y="212">ANL</text>
         <text class="t-fuse-v" x="556" y="226">200 A</text>
         <path class="tap-neg" d="M546,250 L815,250"/>
         <text class="t-sub-s" x="705" y="190" text-anchor="middle">MultiPlus · 50 mm² · pitkä veto keittiöön</text>
@@ -285,8 +285,8 @@
         <!-- ===== MPPT feed (long run to kitchen) ===== -->
         <path class="tap-pos" d="M511,300 L525,300 M587,300 L720,300 L720,360 L815,360"/>
         <rect class="fuse" x="525" y="283" width="62" height="34" rx="4"/>
-        <text class="t-fuse-l" x="556" y="297">MEGA</text>
-        <text class="t-fuse-v" x="556" y="311">30 A</text>
+        <text class="t-fuse-l" x="556" y="297">ANL</text>
+        <text class="t-fuse-v" x="556" y="311">35 A</text>
         <path class="tap-neg" d="M546,335 L700,335 L700,400 L815,400"/>
         <text class="t-gauge" x="640" y="293" text-anchor="middle">6 mm²</text>
         <text class="t-gauge" x="656" y="349" text-anchor="middle">6 mm²</text>
@@ -294,7 +294,7 @@
         <!-- ===== EBL Wohnraum + feed (short run to driver seat) ===== -->
         <path class="tap-pos" d="M505,528 L505,552 M505,584 L505,652 L770,652 L770,712"/>
         <rect class="fuse" x="474" y="552" width="62" height="32" rx="4"/>
-        <text class="t-fuse-l" x="505" y="565">MEGA</text>
+        <text class="t-fuse-l" x="505" y="565">ANL</text>
         <text class="t-fuse-v" x="505" y="578">50 A</text>
         <text class="t-gauge" x="470" y="618" text-anchor="end">Wohnraum + 16 mm²</text>
         <text class="t-sub-s" x="470" y="632" text-anchor="end">~1,5 m</text>
@@ -401,10 +401,10 @@
         <path d="M433,748 L447,762 M447,748 L433,762" stroke="var(--pos)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
         <text class="t-sub-s" x="500" y="905" text-anchor="middle" fill="var(--pos)">alkup. käynnistysakku–EBL-johto KATKAISTAAN</text>
 
-        <!-- Vaihe 3: Orion OUT+ -> EBL Starterbatterie-tulo (30 A) -->
+        <!-- Vaihe 3: Orion OUT+ -> EBL Starterbatterie-tulo (35 A ANL) -->
         <path class="v3-pos" d="M622,770 L648,770 L648,752 L695,752"/>
         <rect class="fuse" x="650" y="742" width="32" height="18" rx="3"/>
-        <text class="t-fuse-v" x="666" y="755" style="font-size:7px">30A</text>
+        <text class="t-fuse-v" x="666" y="755" style="font-size:7px">35A</text>
 
         <!-- Vaihe 3: EBL D+ -> Orion Remote -->
         <path class="wire-ctrl" d="M695,786 L660,786 L660,800 L622,800"/>
@@ -424,7 +424,7 @@
       </svg>
     </div>
     <figcaption>
-      Jakokiskot ovat järjestelmän keskus <strong>matkustajan penkin alla</strong> akun vieressä: LiFePO4 → päävirtakytkin (275&nbsp;A) → Class-T (200&nbsp;A) → plus-jakokisko; LiFePO4&nbsp;− → SmartShunt → miinus-jakokisko. <strong>Akun miinusnapaan kytketään vain SmartShunt.</strong> Jakokiskoilta lähtevät <strong>pitkät vedot keittiön alakaappiin</strong> (MultiPlus 12/1600/70 → 50&nbsp;mm² / 200&nbsp;A, MPPT 6&nbsp;mm² / 30&nbsp;A) ja <strong>lyhyet 16&nbsp;mm² vedot kuljettajan penkille</strong> (EBL Wohnraum+ ja Masse−, ~1,5&nbsp;m). <strong>Ajonaikainen lataus (Schaudtin ohje):</strong> käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto <strong>katkaistaan</strong> ja Orion&nbsp;XS kytketään väliin (IN+ 40&nbsp;A, OUT+ EBL:n Starterbatterie-tuloon 30&nbsp;A, IN−/OUT− Masse, D+ → Remote). Ajossa EBL yhdistää sisäisesti Starterbatterie- ja Wohnraum-piirit, jolloin lataus menee Wohnraum+-johtoa pitkin jakokiskolle. Orionin lähtövirta rajoitetaan <strong>~25&nbsp;A:iin</strong> (EBL:n johdotus kestää ≤30&nbsp;A; sisäinen laturi 18&nbsp;A). Aurinkopaneelit (PV, jopa 100&nbsp;V) kytketään MPPT:n PV-tuloon. <strong>VE-kaapelointi:</strong> MultiPlus → Cerbo VE.Bus-kaapelilla, MPPT → Cerbo VE.Direct, SmartShunt → Cerbo VE.Direct 3&nbsp;m, Orion&nbsp;XS → Cerbo VE.Direct 5&nbsp;m. GX Touch 50 kulkuoven yläpuolella, Cerboon HDMI + USB (2&nbsp;m).
+      Jakokiskot ovat järjestelmän keskus <strong>matkustajan penkin alla</strong> akun vieressä: LiFePO4 → päävirtakytkin (275&nbsp;A) → Class-T (200&nbsp;A) → plus-jakokisko; LiFePO4&nbsp;− → SmartShunt → miinus-jakokisko. <strong>Akun miinusnapaan kytketään vain SmartShunt.</strong> Jakokiskoilta lähtevät <strong>pitkät vedot keittiön alakaappiin</strong> (MultiPlus 12/1600/70 → 50&nbsp;mm² / 200&nbsp;A ANL, MPPT 6&nbsp;mm² / 35&nbsp;A ANL) ja <strong>lyhyet 16&nbsp;mm² vedot kuljettajan penkille</strong> (EBL Wohnraum+ ja Masse−, ~1,5&nbsp;m). <strong>Ajonaikainen lataus (Schaudtin ohje):</strong> käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto <strong>katkaistaan</strong> ja Orion&nbsp;XS kytketään väliin (IN+ 40&nbsp;A, OUT+ EBL:n Starterbatterie-tuloon 35&nbsp;A, IN−/OUT− Masse, D+ → Remote). Ajossa EBL yhdistää sisäisesti Starterbatterie- ja Wohnraum-piirit, jolloin lataus menee Wohnraum+-johtoa pitkin jakokiskolle. Orionin lähtövirta rajoitetaan <strong>~25&nbsp;A:iin</strong> (EBL:n johdotus kestää ≤30&nbsp;A; sisäinen laturi 18&nbsp;A). Aurinkopaneelit (PV, jopa 100&nbsp;V) kytketään MPPT:n PV-tuloon. <strong>VE-kaapelointi:</strong> MultiPlus → Cerbo VE.Bus-kaapelilla, MPPT → Cerbo VE.Direct, SmartShunt → Cerbo VE.Direct 3&nbsp;m, Orion&nbsp;XS → Cerbo VE.Direct 5&nbsp;m. GX Touch 50 kulkuoven yläpuolella, Cerboon HDMI + USB (2&nbsp;m).
     </figcaption>
   </figure>
 
