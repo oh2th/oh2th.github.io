@@ -176,7 +176,7 @@
   <header>
     <p class="eyebrow">Matkailuauto · EBL 119 + Victron · Vaihtoehto B · <a href="goa753-victron-kaavio.html">Alkuperäinen kaavio (akku matkustajan penkin alla)</a></p>
     <h1>12 V DC — akku ja MultiPlus vaatekaapissa</h1>
-    <p class="lede">LiTime 12&nbsp;V / 320&nbsp;Ah ei mahdu matkustajan penkin alle, joten akku, päävirtakytkin, Class-T, SmartShunt, virranjakorasia ja MultiPlus siirtyvät <strong>oikean puolen vaatekaappiin</strong> 230&nbsp;V AC -keskuksen viereen – samoin SmartSolar MPPT ja PV:n DC-johdonsuoja. Keittiön alakaappiin jää Cerbo GX; kuljettajan penkin alus (EBL, käynnistysakku, Orion) pysyy ennallaan.</p>
+    <p class="lede">LiTime 12&nbsp;V / 320&nbsp;Ah ei mahdu matkustajan penkin alle, joten akku, päävirtakytkin, Class-T, SmartShunt, virranjakorasia ja MultiPlus siirtyvät <strong>oikean puolen vaatekaappiin</strong> 230&nbsp;V AC -keskuksen viereen – samoin SmartSolar MPPT ja PV:n DC-johdonsuoja. Keittiön alakaappiin jää Cerbo GX; kuljettajan penkin alus (EBL, käynnistysakku, Orion) pysyy ennallaan. Kaavio on aseteltu auton pohjakuvan mukaan: takaosa ylhäällä, keula alhaalla – vaatekaappi takana, keittiö ja kulkuovi vasemmalla, kuljettajan penkki edessä oikealla.</p>
   </header>
 
   <ul class="legend">
@@ -221,10 +221,10 @@
         <!-- ================= ZONE FRAMES ================= -->
         <path class="inset" d="M44,92 L998,92 Q1012,92 1012,106 L1012,500 Q1012,512 1000,512 L772,512 Q760,512 760,524 L760,638 Q760,652 746,652 L44,652 Q30,652 30,638 L30,106 Q30,92 44,92 Z"/>
         <text class="t-zone" x="46" y="114">OIKEAN PUOLEN VAATEKAAPPI</text>
-        <rect class="inset" x="1022" y="110" width="243" height="170" rx="14"/>
-        <text class="t-zone" x="1036" y="132">KEITTIÖN ALAKAAPPI</text>
-        <rect class="inset" x="150" y="672" width="870" height="384" rx="14"/>
-        <text class="t-zone" x="168" y="678">KULJETTAJAN PENKIN ALLA · ENNALLAAN</text>
+        <rect class="inset" x="30" y="672" width="280" height="196" rx="14"/>
+        <text class="t-zone" x="46" y="694">KEITTIÖN ALAKAAPPI</text>
+        <rect class="inset" x="340" y="672" width="870" height="384" rx="14"/>
+        <text class="t-zone" x="358" y="678">KULJETTAJAN PENKIN ALLA · ENNALLAAN</text>
 
         <!-- ================= VAATEKAAPPI ================= -->
         <!-- feeders (drawn first, boxes cover them) -->
@@ -317,7 +317,7 @@
         <text class="t-sub-s" x="650" y="351" text-anchor="middle">MPPT · lyhyt veto</text>
 
         <!-- ===== EBL Wohnraum + feed (pitkä veto kuljettajan penkille) ===== -->
-        <path class="tap-pos" d="M505,528 L505,552 M505,584 L505,616 L838,616 L838,716"/>
+        <path class="tap-pos" d="M505,528 L505,552 M505,584 L505,616 L1028,616 L1028,716"/>
         <rect class="fuse" x="474" y="552" width="62" height="32" rx="4"/>
         <text class="t-fuse-l" x="505" y="565">MINI-ANL</text>
         <text class="t-fuse-v" x="505" y="578">50 A</text>
@@ -325,8 +325,8 @@
         <text class="t-sub-s" x="470" y="622" text-anchor="end">pitkä veto · mittaa</text>
 
         <!-- ===== EBL Masse − feed (pitkä veto kuljettajan penkille) ===== -->
-        <path class="tap-neg" d="M540,528 L540,660 L680,660 L680,924"/>
-        <text class="t-sub-s" x="610" y="676" text-anchor="middle">EBL Masse − · 16 mm²</text>
+        <path class="tap-neg" d="M540,528 L540,660 L870,660 L870,924"/>
+        <text class="t-sub-s" x="770" y="654" text-anchor="middle">EBL Masse − · 16 mm²</text>
 
         <!-- ================= MPPT + PV (vaatekaappi) ================= -->
         <!-- SmartSolar MPPT -->
@@ -359,29 +359,33 @@
         <text class="t-gauge" x="1010" y="560" text-anchor="start">PV 6 mm²</text>
         <text class="t-sub-s" x="1010" y="575" style="text-anchor:start">katolta vaatekaappiin</text>
 
-        <!-- Cerbo GX -->
-        <rect class="box" x="1035" y="175" width="175" height="82" rx="10"/>
-        <text class="t-cmp-sm" x="1122" y="203">Cerbo GX MK2</text>
-        <text class="t-sub-s" x="1122" y="219">järjestelmän aivot</text>
-        <text class="t-sub-s" x="1122" y="234">3× VE.Direct + VE.Bus</text>
+        <!-- Cerbo GX (keittiön alakaappi, kulkuoven vieressä) -->
+        <rect class="box" x="62" y="722" width="175" height="82" rx="10"/>
+        <text class="t-cmp-sm" x="149" y="750">Cerbo GX MK2</text>
+        <text class="t-sub-s" x="149" y="766">järjestelmän aivot</text>
+        <text class="t-sub-s" x="149" y="781">3× VE.Direct + VE.Bus</text>
 
         <!-- GX Touch 50 (kulkuoven yläpuolella) -->
-        <rect class="box" x="1055" y="655" width="180" height="66" rx="10"/>
-        <text class="t-cmp-sm" x="1145" y="683">GX Touch 50</text>
-        <text class="t-sub-s" x="1145" y="699">kulkuoven yläpuolella</text>
-        <path class="wire-ctrl" d="M1210,230 L1248,230 L1248,672 L1235,672"/>
-        <text class="t-sub-s" x="1256" y="450" text-anchor="middle" transform="rotate(90 1256 450)">HDMI + USB · 2 m</text>
+        <rect class="box" x="60" y="930" width="180" height="66" rx="10"/>
+        <text class="t-cmp-sm" x="150" y="958">GX Touch 50</text>
+        <text class="t-sub-s" x="150" y="974">kulkuoven yläpuolella</text>
+        <path class="wire-ctrl" d="M150,804 L150,930"/>
+        <text class="t-sub-s" x="158" y="900" style="text-anchor:start">HDMI + USB · 2 m</text>
 
-        <!-- Victron VE-kaapelointi Cerbolle -->
-        <path class="wire-ctrl" d="M738,198 L1035,198"/>
-        <text class="t-sub-s" x="900" y="192" text-anchor="middle">VE.Bus (RJ45, CAT5) · MultiPlus → Cerbo · mittaa pituus</text>
-        <path class="wire-ctrl" d="M1005,358 L1024,358 L1024,246 L1035,246"/>
-        <text class="t-sub-s" x="1030" y="305" text-anchor="start">VE.Direct · mittaa</text>
-        <path class="wire-ctrl" d="M331,527 L331,600 L1088,600 L1088,257"/>
-        <text class="t-sub-s" x="606" y="594" style="text-anchor:start">VE.Direct SmartShunt → Cerbo · mittaa</text>
-        <path class="wire-ctrl" d="M480,744 L480,638 L1115,638 L1115,257"/>
-        <text class="t-sub-s" x="880" y="634" text-anchor="middle">VE.Direct 5 m · Orion XS → Cerbo</text>
+        <!-- Victron VE-kaapelointi Cerbolle: vaatekaapista ylä- ja vasenta reunaa pitkin -->
+        <path class="wire-ctrl" d="M1005,358 L1024,358 L1024,66 L12,66 L12,780 L62,780"/>
+        <text class="t-sub-s" x="300" y="62" style="text-anchor:start">VE.Direct · SmartSolar MPPT → Cerbo · mittaa pituus</text>
+        <path class="wire-ctrl" d="M738,198 L808,198 L808,82 L20,82 L20,760 L62,760"/>
+        <text class="t-sub-s" x="300" y="78" style="text-anchor:start">VE.Bus (RJ45, CAT5) · MultiPlus → Cerbo · mittaa pituus</text>
+        <path class="wire-ctrl" d="M290,527 L290,706 L205,706 L205,722"/>
+        <text class="t-sub-s" x="296" y="640" style="text-anchor:start">VE.Direct SmartShunt → Cerbo</text>
+        <path class="wire-ctrl" d="M670,744 L670,730 L322,730 L322,790 L237,790"/>
+        <text class="t-sub-s" x="500" y="726" text-anchor="middle">VE.Direct 5 m · Orion XS → Cerbo</text>
 
+        <!-- suunta pohjakuvan mukaan -->
+        <text class="t-sub-s" x="1240" y="1040" text-anchor="middle">keula ▼</text>
+
+        <g transform="translate(190 0)">
         <!-- ================= DRIVER SEAT ================= -->
         <!-- starter battery -->
         <rect class="box" x="180" y="748" width="140" height="108" rx="11"/>
@@ -454,6 +458,7 @@
         <text class="t-sub-s" x="250" y="962" text-anchor="middle">runko</text>
 
         <text class="t-sub-s" x="585" y="1000" text-anchor="middle">Orion − ja EBL Masse − yhdistyvät ja menevät yhtä 16 mm² johtoa pitkin vaatekaapin virranjakorasian − kiskolle</text>
+        </g>
       </svg>
     </div>
     <figcaption>
