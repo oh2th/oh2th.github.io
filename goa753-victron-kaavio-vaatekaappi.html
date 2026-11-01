@@ -62,7 +62,7 @@
   }
   img { max-width: 100%; }
   .page {
-    max-width: 1180px;
+    max-width: 820px;
     margin: 0 auto;
     padding: clamp(24px, 5vw, 44px) clamp(16px, 4vw, 28px) 56px;
   }
@@ -115,7 +115,7 @@
   .scroll svg {
     display: block;
     width: 100%;
-    min-width: 960px;
+    min-width: 520px;
     height: auto;
   }
   figcaption {
@@ -174,7 +174,7 @@
 <body>
 <div class="page">
   <header>
-    <p class="eyebrow">Matkailuauto · EBL 119 + Victron · Vaihtoehto B · <a href="goa753-victron-kaavio.html">Alkuperäinen kaavio (akku matkustajan penkin alla)</a></p>
+    <p class="eyebrow">Matkailuauto · EBL 119 + Victron · Lopullinen toteutus · <a href="goa753-victron-kaavio.html">Alkuperäinen kaavio (akku matkustajan penkin alla)</a></p>
     <h1>12 V DC — akku ja MultiPlus vaatekaapissa</h1>
     <p class="lede">LiTime 12&nbsp;V / 320&nbsp;Ah ei mahdu matkustajan penkin alle, joten akku, päävirtakytkin, Class-T, SmartShunt, virranjakorasia ja MultiPlus siirtyvät <strong>oikean puolen vaatekaappiin</strong> 230&nbsp;V AC -keskuksen viereen – samoin SmartSolar MPPT ja PV:n DC-johdonsuoja. Keittiön alakaappiin jää Cerbo GX; kuljettajan penkin alus (EBL, käynnistysakku, Orion) pysyy ennallaan. Kaavio on aseteltu auton pohjakuvan mukaan: takaosa ylhäällä, keula alhaalla – vaatekaappi takana, keittiö ja kulkuovi vasemmalla, kuljettajan penkki edessä oikealla.</p>
   </header>
@@ -198,7 +198,7 @@
     </li>
     <li>
       <svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="1" y1="6" x2="29" y2="6" stroke="var(--pos)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 5"/></svg>
-      Vaihe 3: Orion XS (ajonaikainen lataus)
+      EBL:n sisäinen D+-rele (yhdistää ajossa)
     </li>
     <li>
       <svg width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"><line x1="1" y1="6" x2="29" y2="6" stroke="var(--muted)" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="9 4 2 4"/></svg>
@@ -216,257 +216,251 @@
 
   <figure>
     <div class="scroll">
-      <svg viewBox="0 0 1280 1064" role="img" aria-label="Matkailuauton 12 voltin tasavirtajärjestelmän kytkentäkaavio, vaihtoehto B, kolmessa sijaintipaikassa. Oikean puolen vaatekaapissa 230 voltin AC-keskuksen vieressä: LiTime LiFePO4-akku 12 V 320 Ah, päävirtakytkin 275 A, Class-T-sulake 200 A, SmartShunt, virranjakorasia FOUR Connect 4-FB420 (plus- ja miinuskisko, kaksi 50 mm² liitintä ja neljä Mini-ANL-sulakepaikkaa) sekä MultiPlus 12/1600/70 mahdollisimman lyhyellä 50 mm² vedolla rasian toisesta 50 mm² liittimestä, ilman omaa sulaketta, koska Class-T 200 A suojaa. MultiPlussan 230 voltin AC-tulo ja -lähtö kytketään viereiseen AC-keskukseen. Samassa kaapissa SmartSolar MPPT lyhyellä 6 mm² vedolla ja 30 A Mini-ANL-sulakkeella sekä katolla olevien aurinkopaneelien (2 × 150 Wp) PV-tulo 2-napaisen 10 A DC-johdonsuojan kautta. Keittiön alakaapissa vain Cerbo GX. Kuljettajan penkille EBL 119:n Wohnraum-plussaan ja Masse-miinukseen lähtevät nyt pitkät 16 mm² vedot, plus 50 A Mini-ANL-sulakkeella. Rungon maadoitus 20 mm² miinuskiskolta. Kaksi Mini-ANL-paikkaa jää vapaaksi. LiFePO4-akun miinusnapaan kytketään vain SmartShunt. Datakaapelit Cerbolle: MultiPlus VE.Bus-kaapelilla vaatekaapista keittiöön, MPPT VE.Direct-kaapelilla vaatekaapista keittiöön, SmartShunt VE.Direct-kaapelilla vaatekaapista keittiöön, Orion XS VE.Direct 5 m. GX Touch 50 kulkuoven yläpuolella, Cerboon HDMI- ja USB-kaapelilla. Kuljettajan penkin alla ennallaan käynnistysakku, EBL 119 ja Orion XS: vaihe 3:ssa käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto katkaistaan ja Orion XS kytketään väliin, IN plus 40 A sulakkeella, OUT plus 30 A sulakkeella, D plus ohjaa Remote-napaa, lähtövirta noin 25 A.">
+      <svg viewBox="0 0 760 1230" role="img" aria-label="Matkailuauton 12 voltin tasavirtajärjestelmän kytkentäkaavio, lopullinen toteutus, kolmessa sijaintipaikassa. Oikean puolen vaatekaapissa 230 voltin AC-keskuksen vieressä: LiTime LiFePO4-akku 12 V 320 Ah, päävirtakytkin 275 A, Class-T-sulake 200 A, SmartShunt, virranjakorasia FOUR Connect 4-FB420 (plus- ja miinuskisko, kaksi 50 mm² liitintä ja neljä Mini-ANL-sulakepaikkaa) sekä MultiPlus 12/1600/70 mahdollisimman lyhyellä 50 mm² vedolla rasian toisesta 50 mm² liittimestä, ilman omaa sulaketta, koska Class-T 200 A suojaa. MultiPlussan 230 voltin AC-tulo ja -lähtö kytketään viereiseen AC-keskukseen. Samassa kaapissa SmartSolar MPPT lyhyellä 6 mm² vedolla ja 30 A Mini-ANL-sulakkeella sekä katolla olevien aurinkopaneelien (2 × 150 Wp) PV-tulo 2-napaisen 10 A DC-johdonsuojan kautta. Keittiön alakaapissa vain Cerbo GX. Kuljettajan penkille EBL 119:n Wohnraum-plussaan ja Masse-miinukseen lähtevät nyt pitkät 16 mm² vedot, plus 50 A Mini-ANL-sulakkeella. Rungon maadoitus 20 mm² miinuskiskolta. Kaksi Mini-ANL-paikkaa jää vapaaksi. LiFePO4-akun miinusnapaan kytketään vain SmartShunt. Datakaapelit Cerbolle: MultiPlus VE.Bus-kaapelilla vaatekaapista keittiöön, MPPT VE.Direct-kaapelilla vaatekaapista keittiöön, SmartShunt VE.Direct-kaapelilla vaatekaapista keittiöön, Orion XS VE.Direct 5 m. GX Touch 50 kulkuoven yläpuolella, Cerboon HDMI- ja USB-kaapelilla. Kuljettajan penkin alla käynnistysakku, EBL 119 ja Orion XS: käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto on katkaistu ja Orion XS on kytketty väliin, IN plus 40 A sulakkeella, OUT plus 30 A sulakkeella, D plus ohjaa Orionin Remote-liittimen H-napaa, lähtövirta noin 25 A.">
+        <!-- Kapea asettelu pohjakuvan mukaan: takaosa ylhäällä, keula alhaalla -->
 
         <!-- ================= ZONE FRAMES ================= -->
-        <path class="inset" d="M44,92 L998,92 Q1012,92 1012,106 L1012,500 Q1012,512 1000,512 L772,512 Q760,512 760,524 L760,638 Q760,652 746,652 L44,652 Q30,652 30,638 L30,106 Q30,92 44,92 Z"/>
-        <text class="t-zone" x="46" y="114">OIKEAN PUOLEN VAATEKAAPPI</text>
-        <rect class="inset" x="30" y="672" width="280" height="196" rx="14"/>
-        <text class="t-zone" x="46" y="694">KEITTIÖN ALAKAAPPI</text>
-        <rect class="inset" x="340" y="672" width="870" height="384" rx="14"/>
-        <text class="t-zone" x="358" y="678">KULJETTAJAN PENKIN ALLA · ENNALLAAN</text>
+        <rect class="inset" x="20" y="40" width="720" height="560" rx="14"/>
+        <text class="t-zone" x="36" y="62">OIKEAN PUOLEN VAATEKAAPPI</text>
+        <rect class="inset" x="20" y="630" width="260" height="140" rx="14"/>
+        <text class="t-zone" x="36" y="652">KEITTIÖN ALAKAAPPI</text>
+        <rect class="inset" x="20" y="870" width="720" height="330" rx="14"/>
+        <text class="t-zone" x="36" y="892">KULJETTAJAN PENKIN ALLA</text>
 
         <!-- ================= VAATEKAAPPI ================= -->
         <!-- feeders (drawn first, boxes cover them) -->
-        <path class="wire-pos" d="M205,352 L230,352 L230,140 L505,140 L505,182"/>
-        <path class="wire-neg" d="M205,462 L230,462 L230,505 L540,505 L540,510"/>
+        <path class="wire-pos" d="M150,230 L165,230 L165,95 L400,95 L400,152"/>
+        <path class="wire-neg" d="M150,330 L165,330 L165,440 L438,440"/>
 
         <!-- LiTime LiFePO4 battery -->
-        <rect class="box" x="55" y="320" width="150" height="182" rx="12"/>
-        <text class="t-cmp-sm" x="130" y="360">LiTime LiFePO&#8324;</text>
-        <text class="t-mono-c" x="130" y="378">12 V / 320 Ah</text>
-        <text class="t-sub-s" x="130" y="404">kiinnitetty lattiaan</text>
-        <text class="t-sub-s" x="130" y="418">(törmäyskestävä kiinnitys)</text>
-        <text class="t-sub-s" x="130" y="440">tarkista BMS:n</text>
-        <text class="t-sub-s" x="130" y="454">jatkuva virta ≥ 150 A</text>
-        <circle class="dot-pos" cx="205" cy="352" r="4.5"/>
-        <circle class="dot-neg" cx="205" cy="462" r="4.5"/>
-        <text class="t-term" x="192" y="347" fill="var(--pos)" text-anchor="end">+</text>
-        <text class="t-term" x="192" y="475" fill="var(--neg)" text-anchor="end">–</text>
-        <text class="t-gauge" x="240" y="300">50 mm² · lyhyt</text>
-        <text class="t-gauge" x="240" y="548">50 mm² · lyhyt</text>
+        <rect class="box" x="30" y="200" width="120" height="160" rx="12"/>
+        <text class="t-cmp-sm" x="90" y="240">LiTime LiFePO&#8324;</text>
+        <text class="t-mono-c" x="90" y="258">12 V / 320 Ah</text>
+        <text class="t-sub-s" x="90" y="284">kiinnitys lattiaan,</text>
+        <text class="t-sub-s" x="90" y="298">törmäyskestävästi</text>
+        <text class="t-sub-s" x="90" y="320">tarkista BMS:n</text>
+        <text class="t-sub-s" x="90" y="334">jatkuva virta ≥ 150 A</text>
+        <circle class="dot-pos" cx="150" cy="230" r="4.5"/>
+        <circle class="dot-neg" cx="150" cy="330" r="4.5"/>
+        <text class="t-term" x="140" y="225" fill="var(--pos)" text-anchor="end">+</text>
+        <text class="t-term" x="140" y="348" fill="var(--neg)" text-anchor="end">–</text>
+        <text class="t-gauge" x="172" y="170">50 mm² · lyhyt</text>
+        <text class="t-gauge" x="172" y="404">50 mm² · lyhyt</text>
 
         <!-- main switch + Class-T -->
-        <rect class="box" x="262" y="116" width="108" height="46" rx="7"/>
-        <text class="t-cmp-sm" x="316" y="137">Päävirtakytkin</text>
-        <text class="t-mono-c" x="316" y="153">275 A</text>
-        <rect class="fuse" x="388" y="116" width="108" height="46" rx="7"/>
-        <text class="t-cmp-sm" x="442" y="137">Class-T-pidike</text>
-        <text class="t-fuse-v" x="442" y="155" style="font-size:10px">200 A</text>
+        <rect class="box" x="170" y="72" width="100" height="46" rx="7"/>
+        <text class="t-cmp-sm" x="220" y="93">Päävirtakytkin</text>
+        <text class="t-mono-c" x="220" y="109">275 A</text>
+        <rect class="fuse" x="280" y="72" width="80" height="46" rx="7"/>
+        <text class="t-cmp-sm" x="320" y="93">Class-T</text>
+        <text class="t-fuse-v" x="320" y="111" style="font-size:10px">200 A</text>
 
         <!-- SmartShunt -->
-        <rect class="box" x="262" y="481" width="138" height="46" rx="7"/>
-        <text class="t-cmp-sm" x="331" y="502">SmartShunt 500 A</text>
-        <text class="t-sub-s" x="331" y="518">SoC / %-varaus</text>
+        <rect class="box" x="175" y="418" width="125" height="46" rx="7"/>
+        <text class="t-cmp-sm" x="237" y="439">SmartShunt 500 A</text>
+        <text class="t-sub-s" x="237" y="455">SoC / %-varaus</text>
 
         <!-- virranjakorasia FOUR Connect 4-FB420: + ja − kisko, 4× Mini-ANL -->
-        <rect x="470" y="168" width="130" height="424" rx="10" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
-        <rect class="rail-pos" x="499" y="180" width="12" height="350" rx="3"/>
-        <rect class="rail-neg" x="534" y="205" width="12" height="325" rx="3"/>
-        <text class="t-zone" x="500" y="108" text-anchor="start">VIRRANJAKORASIA 4-FB420</text>
-        <text class="t-sub-s" x="568" y="562" text-anchor="middle">+2 vapaata</text>
-        <text class="t-term" x="487" y="200" fill="var(--pos)" text-anchor="middle">+</text>
-        <text class="t-term" x="560" y="200" fill="var(--neg)" text-anchor="middle">–</text>
+        <rect x="365" y="140" width="155" height="420" rx="10" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+        <rect class="rail-pos" x="394" y="150" width="12" height="350" rx="3"/>
+        <rect class="rail-neg" x="432" y="190" width="12" height="310" rx="3"/>
+        <text class="t-zone" x="410" y="132" text-anchor="start">VIRRANJAKORASIA 4-FB420</text>
+        <text class="t-term" x="380" y="172" fill="var(--pos)" text-anchor="middle">+</text>
+        <text class="t-term" x="438" y="184" fill="var(--neg)" text-anchor="middle">–</text>
+        <text class="t-sub-s" x="481" y="458">+2 vapaata</text>
 
-        <!-- chassis ground at − kisko -->
-        <path class="wire-neg" d="M546,432 L602,432"/>
-        <path class="gnd" d="M602,432 L602,454 M586,454 L618,454 M591,460 L613,460 M596,466 L608,466"/>
-        <text class="t-sub-s" x="626" y="452" style="text-anchor:start">runko</text>
-        <text class="t-sub-s" x="626" y="464" style="text-anchor:start">(yksi maapiste)</text>
-        <text class="t-gauge" x="602" y="420" text-anchor="middle">20 mm²</text>
+        <!-- rail dots -->
+        <circle class="dot-pos" cx="406" cy="165" r="4.5"/>
+        <circle class="dot-pos" cx="406" cy="300" r="4.5"/>
+        <circle class="dot-pos" cx="400" cy="498" r="4.5"/>
+        <circle class="dot-neg" cx="444" cy="225" r="4.5"/>
+        <circle class="dot-neg" cx="444" cy="345" r="4.5"/>
+        <circle class="dot-neg" cx="444" cy="470" r="4.5"/>
+        <circle class="dot-neg" cx="438" cy="498" r="4.5"/>
 
-        <!-- + kisko dots -->
-        <circle class="dot-pos" cx="511" cy="215" r="4.5"/>
-        <circle class="dot-pos" cx="511" cy="300" r="4.5"/>
-        <circle class="dot-pos" cx="505" cy="528" r="4.5"/>
-        <!-- − kisko dots -->
-        <circle class="dot-neg" cx="546" cy="250" r="4.5"/>
-        <circle class="dot-neg" cx="546" cy="335" r="4.5"/>
-        <circle class="dot-neg" cx="540" cy="528" r="4.5"/>
-
-        <!-- ===== MultiPlus feed (short, same cabinet) ===== -->
-        <!-- rasian 2. 50 mm² -liitin, ei omaa sulaketta: Class-T 200 A suojaa -->
-        <path class="tap-pos" d="M511,215 L612,215"/>
-        <path class="tap-neg" d="M546,250 L612,250"/>
-        <text class="t-gauge" x="579" y="266" text-anchor="middle">50 mm²</text>
-        
-        <text class="t-sub-s" x="612" y="150" style="text-anchor:start">MultiPlus-veto 50 mm² · mahdollisimman lyhyt</text>
-        <text class="t-sub-s" x="612" y="163" style="text-anchor:start">ei omaa sulaketta – Class-T 200 A suojaa</text>
+        <!-- ===== MultiPlus feed: rasian 2. 50 mm² -liitin, Class-T 200 A suojaa ===== -->
+        <path class="tap-pos" d="M406,165 L535,165"/>
+        <path class="tap-neg" d="M444,225 L535,225"/>
+        <text class="t-gauge" x="481" y="200" text-anchor="middle">50 mm²</text>
+        <text class="t-sub-s" x="481" y="244">Class-T suojaa</text>
 
         <!-- MultiPlus -->
-        <rect class="box" x="612" y="172" width="126" height="104" rx="12"/>
-        <text class="t-cmp-sm" x="675" y="204">Victron MultiPlus</text>
-        <text class="t-mono-c" x="675" y="222">12 / 1600 / 70</text>
-        <text class="t-sub-s" x="675" y="239">1300 W · 70 A laturi</text>
-        <text class="t-sub-s" x="675" y="254">tuuletusväli!</text>
+        <rect class="box" x="535" y="140" width="120" height="110" rx="12"/>
+        <text class="t-cmp-sm" x="595" y="170">Victron MultiPlus</text>
+        <text class="t-mono-c" x="595" y="188">12 / 1600 / 70</text>
+        <text class="t-sub-s" x="595" y="205">1300 W · 70 A laturi</text>
+        <text class="t-sub-s" x="595" y="222">tuuletusväli!</text>
 
-        <!-- 230 V AC -keskus (olemassa oleva) -->
-        <path class="wire-ac" d="M700,276 L700,512"/>
-        <text class="t-sub-s" x="692" y="396" text-anchor="middle" transform="rotate(-90 692 396)">230 V AC-in / AC-out · lyhyt</text>
-        <rect class="box-ac" x="618" y="512" width="120" height="58" rx="9"/>
-        <text class="t-cmp-sm" x="678" y="536">230 V AC -keskus</text>
-        <text class="t-sub-s" x="678" y="552">olemassa oleva</text>
+        <!-- 230 V AC -keskus (olemassa oleva) MultiPlussan oikealla puolella -->
+        <path class="wire-ac" d="M655,195 L668,195"/>
+        <rect class="box-ac" x="668" y="150" width="66" height="90" rx="9"/>
+        <text class="t-cmp-sm" x="701" y="182">230 V AC</text>
+        <text class="t-cmp-sm" x="701" y="197">-keskus</text>
+        <text class="t-sub-s" x="701" y="214">olemassa</text>
+        <text class="t-sub-s" x="701" y="226">oleva</text>
 
-        <!-- ===== MPPT feed (lyhyt, sama kaappi) ===== -->
-        <path class="tap-pos" d="M511,300 L525,300 M587,300 L790,300 L790,360 L815,360"/>
-        <rect class="fuse" x="525" y="283" width="62" height="34" rx="4"/>
-        <text class="t-fuse-l" x="556" y="297">MINI-ANL</text>
-        <text class="t-fuse-v" x="556" y="311">30 A</text>
-        <path class="tap-neg" d="M546,335 L770,335 L770,400 L815,400"/>
-        <text class="t-gauge" x="640" y="293" text-anchor="middle">6 mm²</text>
-        <text class="t-sub-s" x="650" y="351" text-anchor="middle">MPPT · lyhyt veto</text>
+        <!-- ===== MPPT feed (lyhyt) ===== -->
+        <path class="tap-pos" d="M406,300 L453,300 M509,300 L535,300"/>
+        <rect class="fuse" x="453" y="285" width="56" height="30" rx="4"/>
+        <text class="t-fuse-l" x="481" y="297">MINI-ANL</text>
+        <text class="t-fuse-v" x="481" y="310">30 A</text>
+        <path class="tap-neg" d="M444,345 L535,345"/>
+        <text class="t-gauge" x="481" y="334" text-anchor="middle">6 mm²</text>
 
-        <!-- ===== EBL Wohnraum + feed (pitkä veto kuljettajan penkille) ===== -->
-        <path class="tap-pos" d="M505,528 L505,552 M505,584 L505,616 L1028,616 L1028,716"/>
-        <rect class="fuse" x="474" y="552" width="62" height="32" rx="4"/>
-        <text class="t-fuse-l" x="505" y="565">MINI-ANL</text>
-        <text class="t-fuse-v" x="505" y="578">50 A</text>
-        <text class="t-gauge" x="470" y="608" text-anchor="end">Wohnraum + · 16 mm²</text>
-        <text class="t-sub-s" x="470" y="622" text-anchor="end">pitkä veto · mittaa</text>
-
-        <!-- ===== EBL Masse − feed (pitkä veto kuljettajan penkille) ===== -->
-        <path class="tap-neg" d="M540,528 L540,660 L870,660 L870,924"/>
-        <text class="t-sub-s" x="770" y="654" text-anchor="middle">EBL Masse − · 16 mm²</text>
-
-        <!-- ================= MPPT + PV (vaatekaappi) ================= -->
         <!-- SmartSolar MPPT -->
-        <rect class="box" x="815" y="330" width="190" height="100" rx="12"/>
-        <text class="t-cmp-sm" x="910" y="366">SmartSolar MPPT</text>
-        <text class="t-mono-c" x="910" y="385">100 / 20</text>
-        <text class="t-sub" x="910" y="402">aurinkosäädin</text>
+        <rect class="box" x="535" y="280" width="120" height="85" rx="12"/>
+        <text class="t-cmp-sm" x="595" y="308">SmartSolar MPPT</text>
+        <text class="t-mono-c" x="595" y="326">100 / 20</text>
+        <text class="t-sub-s" x="595" y="342">aurinkosäädin</text>
 
-        <!-- PV: paneeli -> 2-napainen DC-johdonsuoja -> MPPT -->
-        <path class="wire-pv" d="M860,430 L860,448 M860,490 L860,526"/>
-        <path class="wire-pv" d="M955,430 L955,448 M955,490 L955,526"/>
-        <!-- 2-napainen DC-johdonsuojakatkaisija -->
-        <rect class="box-pv" x="822" y="448" width="172" height="42" rx="6"/>
-        <circle cx="860" cy="456" r="2.6" fill="var(--pv)"/>
-        <circle cx="860" cy="482" r="2.6" fill="var(--pv)"/>
-        <line x1="860" y1="456" x2="872" y2="479" stroke="var(--pv)" stroke-width="2.4" stroke-linecap="round"/>
-        <circle cx="955" cy="456" r="2.6" fill="var(--pv)"/>
-        <circle cx="955" cy="482" r="2.6" fill="var(--pv)"/>
-        <line x1="955" y1="456" x2="967" y2="479" stroke="var(--pv)" stroke-width="2.4" stroke-linecap="round"/>
-        <line x1="866" y1="469" x2="961" y2="469" stroke="var(--pv)" stroke-width="1.3" stroke-dasharray="3 2"/>
-        <text class="t-sub-s" x="910" y="506" fill="var(--pv)">DC-johdonsuoja 10 A · 2-nap. · DIN</text>
-        <rect class="box-pv" x="815" y="522" width="190" height="72" rx="12"/>
-        <text class="t-cmp-sm" x="910" y="550">Aurinkopaneelit 2 × 150 Wp</text>
-        <text class="t-sub" x="910" y="568">katolla · kaappien ulkopuolella</text>
-        <text class="t-sub-s" x="910" y="583">yht. 300 Wp</text>
-        <circle class="dot-pv" cx="860" cy="430" r="4.5"/>
-        <circle class="dot-pv" cx="955" cy="430" r="4.5"/>
-        <text class="t-term" x="848" y="426" fill="var(--pv)" text-anchor="end">+</text>
-        <text class="t-term" x="967" y="426" fill="var(--pv)" text-anchor="start">–</text>
-        <text class="t-gauge" x="1010" y="560" text-anchor="start">PV 6 mm²</text>
-        <text class="t-sub-s" x="1010" y="575" style="text-anchor:start">katolta vaatekaappiin</text>
+        <!-- PV: paneelit katolla -> 2-napainen DC-johdonsuoja -> MPPT -->
+        <path class="wire-pv" d="M565,365 L565,390 M565,428 L565,620"/>
+        <path class="wire-pv" d="M625,365 L625,390 M625,428 L625,620"/>
+        <rect class="box-pv" x="540" y="390" width="110" height="38" rx="6"/>
+        <circle cx="565" cy="398" r="2.6" fill="var(--pv)"/>
+        <circle cx="565" cy="420" r="2.6" fill="var(--pv)"/>
+        <line x1="565" y1="398" x2="576" y2="418" stroke="var(--pv)" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="625" cy="398" r="2.6" fill="var(--pv)"/>
+        <circle cx="625" cy="420" r="2.6" fill="var(--pv)"/>
+        <line x1="625" y1="398" x2="636" y2="418" stroke="var(--pv)" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="570" y1="409" x2="631" y2="409" stroke="var(--pv)" stroke-width="1.3" stroke-dasharray="3 2"/>
+        <text class="t-sub-s" x="595" y="444" fill="var(--pv)" style="paint-order:stroke;stroke:var(--surface);stroke-width:4px">DC-johdonsuoja 10 A · 2-nap.</text>
+        <circle class="dot-pv" cx="565" cy="365" r="4.5"/>
+        <circle class="dot-pv" cx="625" cy="365" r="4.5"/>
+        <text class="t-term" x="556" y="382" fill="var(--pv)" text-anchor="end">+</text>
+        <text class="t-term" x="634" y="382" fill="var(--pv)" text-anchor="start">–</text>
+        <text class="t-gauge" x="632" y="520">PV 6 mm²</text>
+        <text class="t-sub-s" x="632" y="534" style="text-anchor:start">katolta</text>
+        <rect class="box-pv" x="525" y="620" width="140" height="70" rx="12"/>
+        <text class="t-cmp-sm" x="595" y="642">Aurinkopaneelit</text>
+        <text class="t-sub" x="595" y="659">2 × 150 Wp · katolla</text>
+        <text class="t-sub-s" x="595" y="675">kaappien ulkopuolella</text>
 
-        <!-- Cerbo GX (keittiön alakaappi, kulkuoven vieressä) -->
-        <rect class="box" x="62" y="722" width="175" height="82" rx="10"/>
-        <text class="t-cmp-sm" x="149" y="750">Cerbo GX MK2</text>
-        <text class="t-sub-s" x="149" y="766">järjestelmän aivot</text>
-        <text class="t-sub-s" x="149" y="781">3× VE.Direct + VE.Bus</text>
+        <!-- chassis ground at − kisko -->
+        <path class="wire-neg" d="M444,470 L492,470 L492,566"/>
+        <path class="gnd" d="M492,566 L492,576 M478,576 L506,576 M483,582 L501,582 M488,588 L496,588"/>
+        <text class="t-sub-s" x="506" y="580" style="text-anchor:start">runko</text>
+        <text class="t-sub-s" x="506" y="592" style="text-anchor:start">20 mm²</text>
+
+        <!-- ===== EBL Wohnraum + (pitkä veto kuljettajan penkille) ===== -->
+        <path class="tap-pos" d="M400,498 L400,510 M400,540 L400,860 L600,860 L600,930"/>
+        <rect class="fuse" x="372" y="510" width="56" height="30" rx="4"/>
+        <text class="t-fuse-l" x="400" y="522">MINI-ANL</text>
+        <text class="t-fuse-v" x="400" y="535">50 A</text>
+        <text class="t-gauge" x="392" y="715" text-anchor="middle" transform="rotate(-90 392 715)">Wohnraum + · 16 mm² · pitkä veto</text>
+
+        <!-- ===== EBL Masse − (pitkä veto kuljettajan penkille) ===== -->
+        <path class="tap-neg" d="M438,498 L438,820 L720,820 L720,1130"/>
+        <text class="t-gauge" x="456" y="700" text-anchor="middle" transform="rotate(-90 456 700)">Masse − · 16 mm²</text>
+
+        <!-- ================= KEITTIÖN ALAKAAPPI ================= -->
+        <!-- Cerbo GX -->
+        <rect class="box" x="50" y="670" width="170" height="82" rx="10"/>
+        <text class="t-cmp-sm" x="135" y="696">Cerbo GX MK2</text>
+        <text class="t-sub-s" x="135" y="712">järjestelmän aivot</text>
+        <text class="t-sub-s" x="135" y="727">3× VE.Direct + VE.Bus</text>
 
         <!-- GX Touch 50 (kulkuoven yläpuolella) -->
-        <rect class="box" x="60" y="930" width="180" height="66" rx="10"/>
-        <text class="t-cmp-sm" x="150" y="958">GX Touch 50</text>
-        <text class="t-sub-s" x="150" y="974">kulkuoven yläpuolella</text>
-        <path class="wire-ctrl" d="M150,804 L150,930"/>
-        <text class="t-sub-s" x="158" y="900" style="text-anchor:start">HDMI + USB · 2 m</text>
+        <rect class="box" x="50" y="790" width="170" height="56" rx="10"/>
+        <text class="t-cmp-sm" x="135" y="814">GX Touch 50</text>
+        <text class="t-sub-s" x="135" y="830">kulkuoven yläpuolella</text>
+        <path class="wire-ctrl" d="M135,752 L135,790"/>
+        <text class="t-sub-s" x="142" y="775" style="text-anchor:start">HDMI + USB · 2 m</text>
 
-        <!-- Victron VE-kaapelointi Cerbolle: vaatekaapista ylä- ja vasenta reunaa pitkin -->
-        <path class="wire-ctrl" d="M1005,358 L1024,358 L1024,66 L12,66 L12,780 L62,780"/>
-        <text class="t-sub-s" x="300" y="62" style="text-anchor:start">VE.Direct · SmartSolar MPPT → Cerbo · mittaa pituus</text>
-        <path class="wire-ctrl" d="M738,198 L808,198 L808,82 L20,82 L20,760 L62,760"/>
-        <text class="t-sub-s" x="300" y="78" style="text-anchor:start">VE.Bus (RJ45, CAT5) · MultiPlus → Cerbo · mittaa pituus</text>
-        <path class="wire-ctrl" d="M290,527 L290,706 L205,706 L205,722"/>
-        <text class="t-sub-s" x="296" y="640" style="text-anchor:start">VE.Direct SmartShunt → Cerbo</text>
-        <path class="wire-ctrl" d="M670,744 L670,730 L322,730 L322,790 L237,790"/>
-        <text class="t-sub-s" x="500" y="726" text-anchor="middle">VE.Direct 5 m · Orion XS → Cerbo</text>
+        <!-- Victron VE-kaapelointi Cerbolle -->
+        <path class="wire-ctrl" d="M640,140 L640,30 L10,30 L10,690 L50,690"/>
+        <path class="wire-ctrl" d="M655,322 L754,322 L754,24 L4,24 L4,710 L50,710"/>
+        <text class="t-sub-s" x="380" y="17">VE.Bus (MultiPlus) ja VE.Direct (MPPT) → Cerbo · mittaa pituudet</text>
+        <path class="wire-ctrl" d="M290,464 L290,690 L220,690"/>
+        <text class="t-sub-s" x="306" y="575" transform="rotate(-90 306 575)">VE.Direct · SmartShunt → Cerbo</text>
+        <path class="wire-ctrl" d="M255,955 L255,730 L220,730"/>
+        <text class="t-sub-s" x="248" y="850" transform="rotate(-90 248 850)">VE.Direct 5 m · Orion → Cerbo</text>
 
-        <!-- suunta pohjakuvan mukaan -->
-        <text class="t-sub-s" x="1240" y="1040" text-anchor="middle">keula ▼</text>
-
-        <g transform="translate(190 0)">
         <!-- ================= DRIVER SEAT ================= -->
+        <g transform="translate(0 30)">
         <!-- starter battery -->
-        <rect class="box" x="180" y="748" width="140" height="108" rx="11"/>
-        <text class="t-cmp-sm" x="250" y="790">Käynnistysakku</text>
-        <text class="t-sub-s" x="250" y="807">12 V · auton oma</text>
-        <circle class="dot-pos" cx="320" cy="776" r="4.5"/>
-        <circle class="dot-neg" cx="250" cy="856" r="4.5"/>
-        <text class="t-term" x="308" y="771" fill="var(--pos)" text-anchor="end">+</text>
-
-        <!-- Orion XS -->
-        <rect class="box-v3" x="440" y="744" width="176" height="114" rx="9"/>
-        <text class="t-cmp-sm" x="528" y="778" fill="var(--ink)">Orion XS</text>
-        <text class="t-mono-c" x="528" y="795">12/12-50 A</text>
-        <text class="t-v3" x="528" y="812">VAIHE 3 · ~25 A</text>
-        <circle class="dot-pos" cx="440" cy="774" r="4.5"/>
-        <circle class="dot-pos" cx="616" cy="770" r="4.5"/>
-        <circle cx="616" cy="814" r="3.4" fill="var(--muted)"/>
-        <circle class="dot-neg" cx="528" cy="858" r="4.5"/>
-        <text class="t-sub-s" x="436" y="770" text-anchor="end">IN+</text>
-        <text class="t-sub-s" x="624" y="766" text-anchor="start">OUT+</text>
-        <text class="t-sub-s" x="624" y="819" text-anchor="start">Remote</text>
-        <text class="t-sub-s" x="528" y="878" text-anchor="middle">IN−/OUT−</text>
-
-        <!-- EBL 119 -->
-        <rect class="box" x="736" y="716" width="204" height="172" rx="11"/>
-        <text class="t-cmp-sm" x="838" y="742">EBL 119 (Schaudt)</text>
-        <text class="t-sub-s" x="838" y="757">sisäinen laturi 18 A</text>
-        <text class="t-sub-s" x="838" y="771">230 V -sulake pois (V2)</text>
-        <circle class="dot-pos" cx="838" cy="716" r="4.5"/>
-        <text class="t-sub-s" x="838" y="709" text-anchor="middle">Wohnraum +</text>
-        <circle class="dot-pos" cx="736" cy="754" r="4.5"/>
-        <text class="t-sub-s" x="730" y="750" text-anchor="end">Starterb.</text>
-        <circle cx="736" cy="812" r="3.4" fill="var(--muted)"/>
-        <text class="t-sub-s" x="730" y="816" text-anchor="end">D+</text>
-        <circle class="dot-neg" cx="838" cy="888" r="4.5"/>
-        <text class="t-sub-s" x="838" y="904" text-anchor="middle">Masse −</text>
-
-        <!-- EBL internal: D+ links Starterb. <-> Wohnraum while driving -->
-        <path class="v3-pos" d="M736,754 L760,754 L760,802 L902,802 L902,724 L838,724 L838,716"/>
-        <text class="t-v3" x="860" y="794" text-anchor="middle">D+ RELE</text>
-
-        <!-- Phase 3: starter + -> Orion IN+ (40 A) -->
-        <path class="v3-pos" d="M320,776 L440,774"/>
-        <rect class="fuse" x="352" y="762" width="52" height="26" rx="4"/>
-        <text class="t-fuse-v" x="378" y="779">40 A</text>
-        <text class="t-gauge" x="378" y="804" text-anchor="middle">6 mm²</text>
+        <rect class="box" x="40" y="930" width="110" height="100" rx="11"/>
+        <text class="t-cmp-sm" x="95" y="968">Käynnistysakku</text>
+        <text class="t-sub-s" x="95" y="984">12 V · auton oma</text>
+        <circle class="dot-pos" cx="150" cy="955" r="4.5"/>
+        <circle class="dot-neg" cx="95" cy="1030" r="4.5"/>
+        <text class="t-term" x="140" y="950" fill="var(--pos)" text-anchor="end">+</text>
 
         <!-- original wire starter -> EBL: CUT -->
-        <path d="M382,700 L400,720 M400,700 L382,720" stroke="var(--pos)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-        <text class="t-sub-s" x="391" y="690" text-anchor="middle" fill="var(--pos)">alkup. johto käynnistysakku → EBL: KATKAISTU</text>
+        <path d="M195,890 L213,908 M213,890 L195,908" stroke="var(--pos)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <text class="t-sub-s" x="140" y="880" fill="var(--pos)">alkup. johto käynnistysakku → EBL: KATKAISTU</text>
 
-        <!-- Phase 3: Orion OUT+ -> EBL Starterbatterie input (30 A) -->
-        <path class="v3-pos" d="M616,770 L676,770 L676,754 L736,754"/>
-        <rect class="fuse" x="642" y="743" width="52" height="24" rx="4"/>
-        <text class="t-fuse-v" x="668" y="759">30 A</text>
-        <text class="t-gauge" x="668" y="732" text-anchor="middle">6 mm²</text>
+        <!-- Orion XS -->
+        <rect class="box" x="240" y="925" width="150" height="110" rx="9"/>
+        <text class="t-cmp-sm" x="315" y="962">Orion XS</text>
+        <text class="t-mono-c" x="315" y="979">12/12-50 A</text>
+        <text class="t-sub-s" x="315" y="994">lähtö ~25 A</text>
+        <circle class="dot-pos" cx="240" cy="955" r="4.5"/>
+        <circle class="dot-pos" cx="390" cy="950" r="4.5"/>
+        <circle cx="390" cy="1000" r="3.4" fill="var(--muted)"/>
+        <circle class="dot-neg" cx="315" cy="1035" r="4.5"/>
+        <text class="t-sub-s" x="236" y="946" style="text-anchor:end">IN+</text>
+        <text class="t-sub-s" x="396" y="964" style="text-anchor:start">OUT+</text>
+        <text class="t-sub-s" x="383" y="1003" style="text-anchor:end">Remote H</text>
+        <text class="t-sub-s" x="315" y="1052">IN−/OUT−</text>
 
-        <!-- Phase 3: EBL D+ -> Orion Remote -->
-        <path class="wire-ctrl" d="M736,812 L676,812 L676,814 L616,814"/>
-        <text class="t-sub-s" x="694" y="828" text-anchor="middle">D+ → Remote</text>
+        <!-- starter + -> Orion IN+ (40 A) -->
+        <path class="tap-pos" d="M150,955 L240,955"/>
+        <rect class="fuse" x="172" y="943" width="46" height="24" rx="4"/>
+        <text class="t-fuse-v" x="195" y="959">40 A</text>
+        <text class="t-gauge" x="195" y="984" text-anchor="middle">6 mm²</text>
 
-        <!-- Phase 3: Orion IN-/OUT- + EBL Masse- -> Masse node -> 16 mm2 to busbar -->
-        <path class="v3-neg" d="M528,858 L528,924"/>
-        <path class="tap-neg" d="M838,888 L838,924 L528,924"/>
-        <circle class="dot-neg" cx="680" cy="924" r="4.5"/>
+        <!-- Orion OUT+ -> EBL Starterbatterie (30 A) -->
+        <path class="tap-pos" d="M390,950 L405,950 L405,938 L500,938"/>
+        <rect class="fuse" x="418" y="927" width="46" height="22" rx="4"/>
+        <text class="t-fuse-v" x="441" y="942">30 A</text>
+        <text class="t-gauge" x="441" y="919" text-anchor="middle">6 mm²</text>
+
+        <!-- EBL 119 -->
+        <rect class="box" x="500" y="900" width="200" height="160" rx="11"/>
+        <text class="t-cmp-sm" x="600" y="926">EBL 119 (Schaudt)</text>
+        <text class="t-sub-s" x="600" y="941">sisäinen laturi pois</text>
+        <text class="t-sub-s" x="600" y="955">(laturisulake irrotettu)</text>
+        <circle class="dot-pos" cx="600" cy="900" r="4.5"/>
+        <text class="t-sub-s" x="608" y="893" style="text-anchor:start">Wohnraum +</text>
+        <circle class="dot-pos" cx="500" cy="938" r="4.5"/>
+        <text class="t-sub-s" x="496" y="924" style="text-anchor:end">Starterb.</text>
+        <circle cx="500" cy="996" r="3.4" fill="var(--muted)"/>
+        <text class="t-sub-s" x="507" y="1012" style="text-anchor:start">D+</text>
+        <circle class="dot-neg" cx="600" cy="1060" r="4.5"/>
+        <text class="t-sub-s" x="608" y="1075" style="text-anchor:start">Masse −</text>
+
+        <!-- EBL internal: D+ links Starterb. <-> Wohnraum while driving -->
+        <path class="v3-pos" d="M500,938 L524,938 L524,986 L670,986 L670,908 L600,908 L600,900"/>
+        <text class="t-v3" x="600" y="978">D+ RELE</text>
+
+        <!-- EBL D+ -> Orion Remote -->
+        <path class="wire-ctrl" d="M500,996 L445,996 L445,1000 L390,1000"/>
+        <text class="t-sub-s" x="445" y="1016">D+ → Remote H</text>
+
+        <!-- Orion IN-/OUT- + EBL Masse- -> yhteinen 16 mm² vaatekaappiin -->
+        <path class="tap-neg" d="M315,1035 L315,1100"/>
+        <path class="tap-neg" d="M600,1060 L600,1100 M720,1100 L315,1100"/>
+        <circle class="dot-neg" cx="600" cy="1100" r="4.5"/>
+        <circle class="dot-neg" cx="720" cy="1100" r="4.5"/>
 
         <!-- starter battery - -> chassis -->
-        <path class="wire-neg" d="M250,856 L250,910"/>
-        <path class="gnd" d="M250,910 L250,932 M234,932 L266,932 M239,938 L261,938 M244,944 L256,944"/>
-        <text class="t-sub-s" x="250" y="962" text-anchor="middle">runko</text>
+        <path class="wire-neg" d="M95,1030 L95,1080"/>
+        <path class="gnd" d="M95,1080 L95,1096 M81,1096 L109,1096 M86,1102 L104,1102 M91,1108 L99,1108"/>
+        <text class="t-sub-s" x="95" y="1124">runko</text>
 
-        <text class="t-sub-s" x="585" y="1000" text-anchor="middle">Orion − ja EBL Masse − yhdistyvät ja menevät yhtä 16 mm² johtoa pitkin vaatekaapin virranjakorasian − kiskolle</text>
+        <text class="t-sub-s" x="400" y="1150">Orion − ja EBL Masse − yhdistyvät ja kulkevat yhtä 16 mm² johtoa pitkin vaatekaapin virranjakorasialle</text>
         </g>
+
+        <text class="t-sub-s" x="720" y="1222">keula ▼</text>
       </svg>
     </div>
     <figcaption>
-      Virranjako tehdään <strong>oikean puolen vaatekaapissa</strong> rasialla <strong>FOUR Connect 4-FB420</strong>: plus- ja miinuskisko, kummassakin 2×&nbsp;50&nbsp;mm² ja 4×&nbsp;20&nbsp;mm² liitintä, plus-puolella 4 Mini-ANL-sulakepaikkaa. LiTime LiFePO4 12&nbsp;V / 320&nbsp;Ah → päävirtakytkin (275&nbsp;A) → Class-T (200&nbsp;A) → rasian plus (50&nbsp;mm²); LiFePO4&nbsp;− → SmartShunt → rasian miinus (50&nbsp;mm²). <strong>Akun miinusnapaan kytketään vain SmartShunt.</strong> <strong>MultiPlus 12/1600/70 on samassa kaapissa</strong>, joten <strong>50&nbsp;mm² jää vain vaatekaappiin</strong>: akku → kytkin → Class-T → rasia ja rasian toinen 50&nbsp;mm² liitin → MultiPlus pidetään mahdollisimman lyhyinä (Victron vaatii 12/1600:lle 50&nbsp;mm² myös lyhyellä vedolla). MultiPlussan veto <strong>ei tarvitse omaa sulaketta</strong>: se on samaa 50&nbsp;mm² kaapelia, jota Class-T 200&nbsp;A jo suojaa, ja sen 230&nbsp;V AC-in/AC-out kytketään suoraan viereiseen AC-keskukseen. <strong>SmartSolar MPPT ja PV:n 2-napainen 10&nbsp;A DC-johdonsuoja ovat myös vaatekaapissa</strong>: MPPT:n akkupuoli lyhyesti rasialle 6&nbsp;mm² / 30&nbsp;A Mini-ANL (6&nbsp;mm² johto 20&nbsp;mm² ruuviliittimeen holkilla tai supistusholkilla), ja katolla olevien paneelien (2&nbsp;×&nbsp;150&nbsp;Wp, yht. 300&nbsp;Wp) PV-kaapelit (6&nbsp;mm²) vedetään katolta vaatekaappiin. <strong>Keittiön alakaappiin jää vain Cerbo GX</strong>, jolle vaatekaapista tulevat datakaapelit. <strong>Kuljettajan penkin alus pysyy ennallaan</strong>, mutta EBL:n Wohnraum+ ja Masse− -vedot ovat nyt <strong>pitkiä</strong>: 16&nbsp;mm², 50&nbsp;A Mini-ANL (Orionin ~25&nbsp;A latausvirta kulkee tätä kautta; 25&nbsp;mm² vasta jos veto on yli ~5&nbsp;m). Muut vedot ovat kevyitä: vain akun ja MultiPlussan päälinja on 50&nbsp;mm². Rasian neljästä Mini-ANL-paikasta kaksi jää vapaaksi; miinuskiskon 20&nbsp;mm² liittimiin MPPT−, EBL Masse− ja rungon maadoitus. <strong>Ajonaikainen lataus (Schaudtin ohje)</strong> ennallaan: käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto <strong>katkaistaan</strong> ja Orion&nbsp;XS kytketään väliin (IN+ 40&nbsp;A, OUT+ EBL:n Starterbatterie-tuloon 30&nbsp;A, IN−/OUT− Masse, D+ → Remote), lähtövirta <strong>~25&nbsp;A</strong>. <strong>VE-kaapelointi:</strong> MultiPlus → Cerbo VE.Bus (RJ45, nyt vaatekaapista keittiöön, pidempi kuin 1,8&nbsp;m), MPPT → Cerbo VE.Direct (vaatekaapista keittiöön, pituus mitattava), SmartShunt → Cerbo VE.Direct (vaatekaapista keittiöön, pituus mitattava), Orion&nbsp;XS → Cerbo VE.Direct 5&nbsp;m. GX Touch 50 kulkuoven yläpuolella, Cerboon HDMI + USB (2&nbsp;m).
+      Virranjako tehdään <strong>oikean puolen vaatekaapissa</strong> rasialla <strong>FOUR Connect 4-FB420</strong>: plus- ja miinuskisko, kummassakin 2×&nbsp;50&nbsp;mm² ja 4×&nbsp;20&nbsp;mm² liitintä, plus-puolella 4 Mini-ANL-sulakepaikkaa. LiTime LiFePO4 12&nbsp;V / 320&nbsp;Ah → päävirtakytkin (275&nbsp;A) → Class-T (200&nbsp;A) → rasian plus (50&nbsp;mm²); LiFePO4&nbsp;− → SmartShunt → rasian miinus (50&nbsp;mm²). <strong>Akun miinusnapaan kytketään vain SmartShunt.</strong> <strong>MultiPlus 12/1600/70 on samassa kaapissa</strong>, joten <strong>50&nbsp;mm² jää vain vaatekaappiin</strong>: akku → kytkin → Class-T → rasia ja rasian toinen 50&nbsp;mm² liitin → MultiPlus pidetään mahdollisimman lyhyinä (Victron vaatii 12/1600:lle 50&nbsp;mm² myös lyhyellä vedolla). MultiPlussan veto <strong>ei tarvitse omaa sulaketta</strong>: se on samaa 50&nbsp;mm² kaapelia, jota Class-T 200&nbsp;A jo suojaa, ja sen 230&nbsp;V AC-in/AC-out kytketään suoraan viereiseen AC-keskukseen. <strong>SmartSolar MPPT ja PV:n 2-napainen 10&nbsp;A DC-johdonsuoja ovat myös vaatekaapissa</strong>: MPPT:n akkupuoli lyhyesti rasialle 6&nbsp;mm² / 30&nbsp;A Mini-ANL (6&nbsp;mm² johto 20&nbsp;mm² ruuviliittimeen holkilla tai supistusholkilla), ja katolla olevien paneelien (2&nbsp;×&nbsp;150&nbsp;Wp, yht. 300&nbsp;Wp) PV-kaapelit (6&nbsp;mm²) vedetään katolta vaatekaappiin. <strong>Keittiön alakaappiin jää vain Cerbo GX</strong>, jolle vaatekaapista tulevat datakaapelit. <strong>Kuljettajan penkin alus pysyy ennallaan</strong>, mutta EBL:n Wohnraum+ ja Masse− -vedot ovat nyt <strong>pitkiä</strong>: 16&nbsp;mm², 50&nbsp;A Mini-ANL (Orionin ~25&nbsp;A latausvirta kulkee tätä kautta; 25&nbsp;mm² vasta jos veto on yli ~5&nbsp;m). Muut vedot ovat kevyitä: vain akun ja MultiPlussan päälinja on 50&nbsp;mm². Rasian neljästä Mini-ANL-paikasta kaksi jää vapaaksi; miinuskiskon 20&nbsp;mm² liittimiin MPPT−, EBL Masse− ja rungon maadoitus. <strong>Ajonaikainen lataus (Schaudtin ohje):</strong> käynnistysakun ja EBL:n Starterbatterie-tulon välinen johto <strong>katkaistaan</strong> ja Orion&nbsp;XS kytketään väliin (IN+ 40&nbsp;A, OUT+ EBL:n Starterbatterie-tuloon 30&nbsp;A, IN−/OUT− Masse, D+ → Orionin Remote-liittimen H-napa), lähtövirta <strong>~25&nbsp;A</strong>. EBL:n oma 230&nbsp;V laturi on pois käytöstä (laturisulake irrotettu) – MultiPlus hoitaa maasähkölatauksen. <strong>VE-kaapelointi:</strong> MultiPlus → Cerbo VE.Bus (RJ45, nyt vaatekaapista keittiöön, pidempi kuin 1,8&nbsp;m), MPPT → Cerbo VE.Direct (vaatekaapista keittiöön, pituus mitattava), SmartShunt → Cerbo VE.Direct (vaatekaapista keittiöön, pituus mitattava), Orion&nbsp;XS → Cerbo VE.Direct 5&nbsp;m. GX Touch 50 kulkuoven yläpuolella, Cerboon HDMI + USB (2&nbsp;m).
     </figcaption>
   </figure>
 
-  <p class="note">Kuvassa 12&nbsp;V DC ja PV-tulo; 230&nbsp;V AC vain viitteenä (MultiPlus ↔ AC-keskus). Liitos on merkitty täytetyllä pisteellä; ilman pistettä risteävät johdot eivät ole kytköksissä. <strong>Asunto-osan asennus:</strong> LiFePO4 ei kaasuunnu, joten erillistä ulostuuletusta ei tarvita, mutta akku kiinnitetään lattiaan törmäyksenkestävästi (kiinnikkeet/hihnat runkoon, ei pelkkään kaapin levyyn) ja navat suojataan kosketukselta. MultiPlus tarvitsee vapaata tilaa ympärilleen (n. 10&nbsp;cm ylä- ja alapuolelle) ja ilmanvaihdon kaappiin – vaatteet eivät saa peittää sitä. Tarkista LiTime-akun BMS:n jatkuva purkuvirta: MultiPlus 12/1600 ottaa täydellä kuormalla ~150&nbsp;A. Rungon maadoitus vaatekaapissa lähimpään hitsattuun runkopisteeseen, lyhyellä 20&nbsp;mm² johdolla rasian miinuskiskon 20&nbsp;mm² liittimestä (<strong>yksi</strong> tarkoituksellinen runkomaadoitus). Rasian virtakestoa ei ole ilmoitettu tuotesivulla – varmista, että kiskot ja 50&nbsp;mm² liittimet kestävät MultiPlussan ~150&nbsp;A jatkuvan ja ~250&nbsp;A huippuvirran, koska tämä virta kulkee rasian plus-kiskon kautta. Matkustajan penkin alus vapautuu: vanhat akkujohdot poistetaan tai eristetään. Vaihe 3 noudattaa Schaudtin/Roamerin ohjetta (support.roamer.com/en/articles/1996290); EBL:n johdotus kestää ≤30&nbsp;A.</p>
+  <p class="note">Kuvassa 12&nbsp;V DC ja PV-tulo; 230&nbsp;V AC vain viitteenä (MultiPlus ↔ AC-keskus). Liitos on merkitty täytetyllä pisteellä; ilman pistettä risteävät johdot eivät ole kytköksissä. <strong>Asunto-osan asennus:</strong> LiFePO4 ei kaasuunnu, joten erillistä ulostuuletusta ei tarvita, mutta akku kiinnitetään lattiaan törmäyksenkestävästi (kiinnikkeet/hihnat runkoon, ei pelkkään kaapin levyyn) ja navat suojataan kosketukselta. MultiPlus tarvitsee vapaata tilaa ympärilleen (n. 10&nbsp;cm ylä- ja alapuolelle) ja ilmanvaihdon kaappiin – vaatteet eivät saa peittää sitä. Tarkista LiTime-akun BMS:n jatkuva purkuvirta: MultiPlus 12/1600 ottaa täydellä kuormalla ~150&nbsp;A. Rungon maadoitus vaatekaapissa lähimpään hitsattuun runkopisteeseen, lyhyellä 20&nbsp;mm² johdolla rasian miinuskiskon 20&nbsp;mm² liittimestä (<strong>yksi</strong> tarkoituksellinen runkomaadoitus). Rasian virtakestoa ei ole ilmoitettu tuotesivulla – varmista, että kiskot ja 50&nbsp;mm² liittimet kestävät MultiPlussan ~150&nbsp;A jatkuvan ja ~250&nbsp;A huippuvirran, koska tämä virta kulkee rasian plus-kiskon kautta. Matkustajan penkin alus vapautuu: vanhat akkujohdot poistetaan tai eristetään. Orion-kytkentä noudattaa Schaudtin/Roamerin ohjetta (support.roamer.com/en/articles/1996290); EBL:n johdotus kestää ≤30&nbsp;A.</p>
 </div>
 </body>
 </html>
